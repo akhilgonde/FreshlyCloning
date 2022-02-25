@@ -9,7 +9,8 @@
   width: 100%;
   /* border: 2px solid black; */
   display: flex;
-  height: 65px;
+  height: 70px;
+  /* border: 2px solid red; */
   
   background-color: rgb(255,253,247);
   border-bottom: 1px solid rgb(195, 195, 195);
@@ -17,27 +18,42 @@
 
 #sub_req > div:nth-child(1) {
   margin-left: 100px;
-  width: 6%;
-  height: 50px;
-  margin-top: 20px;
+  width: 5%;
+  /* border: 2px solid green; */
+  height: 40px;
+  margin-top: 30px;
 }
 
 #sub_req > div:nth-child(2) {
   margin-left: 65%;
-  margin-top: 10px;
-  width: 200px;
+  margin-top: 20px;
+  /* border: 2px solid yellow; */
+  width: auto;
   height: 50px;
 }
 
 #sub_req > div:nth-child(3) {
-  width: 200px;
+  /* width: 300px; */
   height: 50px;
-  margin: 10px;
+  /* border: 2px solid black; */
+  margin: 20px;
 }
 
 .sub_a {
   color: rgb(3,81,78);
   text-decoration: none;
+  text-align: center;
+  border: 0;
+  /* border: 2px solid blue; */
+    color: rgba(3, 81, 78, 1);
+    /* display: none; */
+    font-size: 14px;
+    /* padding: 0 20px 0 0; */
+    /* padding-top: 500px;
+     */
+     margin-top: 30px;
+    width: auto;
+  /* margin-top: 50px; */
 }
 
 .sub_a:hover {
@@ -60,7 +76,7 @@
     padding: 0px 0px;
     margin:auto;
     text-align: center;
-    /* border:2px solid red; */
+    
     width: 100%;
     margin-top:65px;
     
@@ -86,8 +102,8 @@
   padding-left: 40px;
   padding-right: 40px;
   -webkit-appearance: none;
-  width: 100%;
-  margin-top:100px;
+  width: 50%;
+  margin-top:120px;
   /* height: 55px; */
   /* width: 100%; */
   outline: none;
@@ -128,7 +144,7 @@
 }
 
 .main .search-input {
-  position: relative;
+  /* position: relative; */
   background: rgb(255,253,247);
   width: 100%;
   border-radius: 5px;
@@ -205,7 +221,7 @@ border: 1px solid purple;
   display:grid;
   grid-template-columns:repeat(3,1fr);
   grid-template-rows: repeat(4,75px);
-  margin-top: 220px;
+  margin-top: 50px;
   gap: 30px 30px;
 
 }
@@ -278,6 +294,7 @@ padding: 0 5%;
   #hbox13{
     color: rgb(3,81,78);
     text-decoration: none;
+    text-align: center;
   }
 
 #promo {
