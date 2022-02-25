@@ -42,21 +42,21 @@ a:after{
   height: 40px;
 }
 
-/* #navbar {
-  width: 100%;
-  height: 56px;
+#navbar {
+  width:100%;
+  height: 72px;
   background-color: rgb(255, 253, 247);
   display: flex;
   margin-top: -5px;
   margin: auto;
-
   align-items: center;
   position: sticky;
 }
 #nav_i {
   width: 200px;
-
+ margin-bottom:0px;
   margin-left: 30px;
+
 }
 #nav_img {
   width: 107px;
@@ -70,11 +70,11 @@ a:after{
 }
 #nav_a > div > a {
   font-family: Favoritfreshly, sans-serif;
-  color: #303030;
+  color: rgb(48,58,66);
   margin-left: 30px;
   font-size: 14px;
   line-height: 1.43em;
-  font-weight: bold;
+  font-weight: 550;
   text-decoration: none;
 }
 #nav_a > div > a:hover {
@@ -99,7 +99,7 @@ a:after{
 #nav_log1 > a:hover {
   color: rgb(49, 103, 255);
 }
-#nav_log2 > button {
+#nav_log2 > a>button {
   background: rgb(49, 103, 255);
   color: white;
   width: 80.64px;
@@ -111,57 +111,58 @@ a:after{
   font-family: Favoritfreshly, sans-serif;
 }
 
-#nav_log2 > button:hover {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+#nav_log2 > a>button:hover {
+  transform: translate(2px, -2px); 
 }
 #navbar {
   position: sticky;
-} */
+  top: -100px;
+}
 
 /* nav bar start here */
-#type {
+/* #type {
   width: 240px;
   height: 25px;
   margin-top: 0%;
   /* border: 1px dashed red; */
-  display: flex;
+  /* display: flex;
   margin: auto;
   margin-bottom: 10px;
-}
+} */
 
-#type > div {
+/* #type > div { */
   /* border: 1px solid black; */
-  width: 120px;
+  /* width: 120px;
   height: 100%;
   margin: auto;
-}
-#consum {
+} */
+/* #consum {
   width: 52%;
 }
 #busi {
   width: 90%;
 }
 #navpar {
-  width: 100%;
+  width: 100%; */
   /* background-color: rgb(255, 255, 255);  */
   /* position: fixed; */
   /* top: 0px; */
   /* border: 1px solid red; */
-  background-color: #fffdf7;
+  /* background-color: #fffdf7;
 }
 #navbar {
-  height: 50px;
+  height: 50px; */
   /* border: dashed black 1px; */
-  width: 75%;
+  /* width: 75%;
   margin: auto;
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
 }
 #navbar > div {
-  height: 45%;
+  height: 45%; */
   /* border: 1px solid red; */
-  margin-top: 15px;
+  /* margin-top: 15px;
   font-family: Favoritfreshly, sans-serif;
 
   font-weight: 700;
@@ -174,9 +175,9 @@ a:after{
   display: flex;
   width: auto;
 }
-#navitem > div {
+#navitem > div { */
   /* border:1px solid green; */
-  margin: 0px 20px;
+  /* margin: 0px 20px;
   font-size: 14px;
 }
 #navitem > div:hover {
@@ -198,7 +199,7 @@ a:after{
   margin: 0px 5px;
   border: 0px;
   height: auto;
-}
+} */ 
 
 /* nav bar ends here */
 #below_nav {
@@ -314,7 +315,7 @@ a:after{
 }
 
 #philo_div_btn1 > a > button:hover {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  transform: translate(2px, -2px); 
 }
 
 #philo_div_imgdes {
@@ -369,7 +370,7 @@ a:after{
 }
 #btn_img>a>button:hover{
 
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  transform: translate(2px, -2px); 
 
 }
 
@@ -500,86 +501,7 @@ margin-top:70px;
 
 
 
-#type {
-  width: 240px;
-  height: 25px;
-  margin-top: 0%;
-  /* border: 1px dashed red; */
-  display: flex;
-  margin: auto;
-  margin-bottom: 10px;
-}
 
-#type > div {
-  /* border: 1px solid black; */
-  width: 120px;
-  height: 100%;
-  margin: auto;
-}
-#consum {
-  width: 52%;
-}
-#busi {
-  width: 90%;
-}
-#navpar {
-  width: 100%;
-  /* background-color: rgb(255, 255, 255);  */
-  /* position: fixed; */
-  /* top: 0px; */
-  /* border: 1px solid red; */
-  background-color: #fffdf7;
-}
-#navbar {
-  height: 50px;
-  /* border: dashed black 1px; */
-  width: 75%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-}
-#navbar > div {
-  height: 45%;
-  /* border: 1px solid red; */
-  margin-top: 15px;
-  font-family: Favoritfreshly, sans-serif;
-
-  font-weight: 700;
-}
-#logofornav {
-  width: 100px;
-  margin-left: 10px;
-}
-#navitem {
-  display: flex;
-  width: auto;
-}
-#navitem > div {
-  /* border:1px solid green; */
-  margin: 0px 20px;
-  font-size: 14px;
-}
-#navitem > div:hover {
-  color: rgb(49, 103, 255);
-}
-#logsign {
-  height: 55%;
-  display: flex;
-  margin-top: 0px;
-  justify-content: center;
-}
-#logsign > div {
-  margin-right: 5px;
-}
-#logsign > button {
-  height: 30px;
-  background-color: rgb(49, 103, 255);
-  color: rgb(255, 255, 255);
-  margin: 0px 5px;
-  border: 0px;
-  height: auto;
-}
 /* footer start */
 #footer div {
   width: 85%;
