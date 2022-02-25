@@ -52,7 +52,7 @@
             <div></div>
             <div id="window">
                 <div id="special">
-                    <div>
+                    <div id="fun">
                         <b>Sunday</b>, Feb 27
                     </div>
 
@@ -62,28 +62,28 @@
                 </div>
 
                 <div>
-                    <div id="fun"><b>Monday</b>, Feb 28</div>
+                    <div id="fun1"><b>Monday</b>, Feb 28</div>
                 </div>
                 <div>
-                    <div id="fun1"><b>Tuesday</b>, Mar 1</div>
+                    <div id="fun2"><b>Tuesday</b>, Mar 1</div>
                 </div>
                 <div>
-                    <div id="fun2"><b>Wednesday</b>, Mar 2</div>
+                    <div id="fun3"><b>Wednesday</b>, Mar 2</div>
                 </div>
                 <div>
-                    <div id="fun3"> <b>Thursday</b>, Mar 3</div>
+                    <div id="fun4"> <b>Thursday</b>, Mar 3</div>
                 </div>
                 <div>
-                    <div id="fun4"><b>Friday</b>, Mar 4</div>
+                    <div id="fun5"><b>Friday</b>, Mar 4</div>
                 </div>
                 <div>
-                    <div id="fun"><b>Saturday</b>, Mar 5</div>
+                    <div id="fun6"><b>Saturday</b>, Mar 5</div>
                 </div>
                 <div>
-                    <div id="fun"><b>Sunday</b>, Mar 6</div>
+                    <div id="fun7"><b>Sunday</b>, Mar 6</div>
                 </div>
                 <div>
-                    <div id="fun"><b>Monday</b>, Mar 7</div>
+                    <div id="fun8"><b>Monday</b>, Mar 7</div>
                 </div>
                 <div>
                     <div id="fun"><b>Tuesday</b>, Mar 8</div>
@@ -132,8 +132,12 @@
 
     var dat1 = document.querySelector("#fun1");
     dat.addEventListener("click", function () {
+       selected1()
+    });
+
+    function selected1(){
         document.querySelector("#date").innerText = "First Delivery Date:" + dat1.innerText;
-    })
+    }
 
     // var dat2=document.querySelector("#fun2");
     // dat.addEventListener("click",function(){
