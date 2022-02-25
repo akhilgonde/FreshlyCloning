@@ -138,7 +138,7 @@ h1{
 #below_text{
     font-size:14px;
     text-align:center;
-    margin-top:-30px;
+    margin-top:5px;
 }
 button{
     height:48px;
@@ -155,3 +155,47 @@ button{
 button:hover{
     background:rgb(34, 83, 189);
 }
+
+#date{
+  font-family: Favoritfreshly, sans-serif;
+  text-align:center;
+  font-size:14px;
+}
+/* footer start */
+#footer div {
+  width: 85%;
+  /* border: 1px solid black; */
+  margin-left: 14%;
+}
+#footer div div {
+  width: 15%;
+  float: left;
+  /* border: 1px solid red; */
+  margin-left: 5%;
+  margin-top: 60px;
+  
+}
+#footer div div p {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+#footer div div a {
+  color: #535369;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+.ok{
+/* filter:Grayscale(1);
+-webkit-filter:Grayscale(1);
+color: grey; */
+opacity:.65;
+}
+
+#footer div div a img {
+  margin-right: 6%;
+  /* filter:Grayscale(1)  ;
+  -webkit-filter:Grayscale(1)  ; */
+}
+
+/* Footer end */
