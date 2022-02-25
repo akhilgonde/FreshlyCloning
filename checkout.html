@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+    <div id="main">
+
+        <div>
+
+            <div id="left">
+                <h2>Checkout</h2>
+                <div>
+                    <h3 id="delhead">Delivery Address</h3>
+                    <form id="form">
+                        <p id="firstname">First Name</p>
+                        <p id="lastname">Last Name</p>
+                        <br>
+                        <input id="ifirstname" type="text">
+                        <input id="ilastname" type="text">
+                        <p id="fullname">Full Name for Delivery Address</p>
+                        <input id="ifullname" type="text">
+                        <p id="addLine1">Address Line 1</p>
+                        <input id="iaddLine1" type="text">
+                        <p id="addLine2">Address Line 2 (Optional)</p>
+                        <input id="iaddLine2" type="text">
+                        <p id="state">State</p>
+                        <select id="istate" class="form-control">
+                            <option value="">Select State </option>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Chhattisgarh">Chhattisgarh</option>
+                            <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                            <option value="Daman and Diu">Daman and Diu</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Lakshadweep">Lakshadweep</option>
+                            <option value="Puducherry">Puducherry</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>
+                            <option value="Meghalaya">Meghalaya</option>
+                            <option value="Mizoram">Mizoram</option>
+                            <option value="Nagaland">Nagaland</option>
+                            <option value="Odisha">Odisha</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Sikkim">Sikkim</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Tripura">Tripura</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="Uttarakhand">Uttarakhand</option>
+                            <option value="West Bengal">West Bengal</option>
+                        </select>
+                        <p id="pin">Pin</p>
+                        <input id="ipin" type="text">
+                        <p id="city">City</p>
+                        <input id="icity" text">
+                        <p id="phone">Phone</p>
+                        <input id="iphone" type="text">
+                        <p id="emeil"> Email (We require your email to send you receipts and order updates)</p>
+                        <input type="email" id="iemeil">
+                        <div id="fortotal">
+                            <p>Total</p>
+                            <p> <span>₹</span> 0 </p>
+                        </div>
+                        <input id="submit" type="submit" value="Next">
+
+
+                    </form>
+                </div>
+
+            </div>
+
+
+
+
+
+            <div id="right">
+                <h2>Order Summary</h2>
+                <div>
+                    <div class="promot"><input placeholder="Promo Code" type="text">
+                        <input type="button" value="Apply">
+                    </div>
+                    <div>
+                        <p>Delivery Date</p>
+                        <!-- <p id="deldat">--/---</p> -->
+                        <input type="date" name="" id="datesel">
+                    </div>
+
+                    <div>
+                        <p>Meals Price </p>
+                        <p id="cartprice"> <span>₹</span> 00</p>
+                    </div>
+                    <div>
+                        <p>Shipping Charges</p>
+                        <p> <span>₹</span> 90</p>
+                    </div>
+                    <div>
+                        <p>Total</p>
+                        <p id="total"> <span>₹</span> 00</p>
+                    </div>
+
+                </div>
+                <div id="right2">
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    var pinval = document.querySelector("#ipin").addEventListener("blur", function () {
+        getpindata()
+    });
+
+    function getpindata() {
+        var pinval = document.querySelector("#ipin").value;
+        switch (pinval) {
+            case "411028":
+                document.querySelector("#icity").value = "Hadapsar,Pune";
+                break;
+            case "560004":
+                document.querySelector("#icity").value = "Mavalli,Bengaluru";
+                break;
+            case "411004":
+                document.querySelector("#icity").value = "F C road,Pune";
+                break;
+            case "411005":
+                document.querySelector("#icity").value = "Shivajinagar,Pune";
+                break;
+            case "411042":
+                document.querySelector("#icity").value = "Swargate,Pune";
+                break;
+            case "403001":
+                document.querySelector("#icity").value = "Altinho,Panaji";
+                break;
+            default:
+                document.querySelector("#icity").value = ""
+        }
+    };
+    document.querySelector("#ilastname").addEventListener("blur", function () {
+        getfullname()
+    });
+    function getfullname() {
+        var fname = document.querySelector("#ifirstname").value;
+        var lname = document.querySelector("#ilastname").value;
+        document.querySelector("#ifullname").value = fname + " " + lname;
+    }
+
+
+</script>
