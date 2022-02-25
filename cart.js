@@ -269,6 +269,7 @@ else
 
 function reset()
 {
-    document.getElementById("cart1").innerHTML = "";    
+    localStorage.removeItem("Cart1");
+    document.getElementById("cart1").innerHTML = "";
 
 }
