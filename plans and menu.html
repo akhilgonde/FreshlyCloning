@@ -41,20 +41,26 @@
     #navpar {
         width: 100%;
         /* background-color: rgb(255, 255, 255);  */
-        /* position: fixed; */
         /* top: 0px; */
         /* border: 1px solid red; */
         background-color: #fffdf7;
+        position: fixed;
+        top:0px;
     }
 
     #navbar {
         height: 50px;
         /* border: dashed black 1px; */
-        width: 75%;
+        width: 100%;
         margin: auto;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-bottom: 15px;
+        position: fixed;
+        background-color: #FFFDF7;
+        /* margin-top: -10px; */
+        /* padding-top: 30px; */
+        text-align: center;
     }
 
     #navbar>div {
@@ -64,6 +70,7 @@
         font-family: Favoritfreshly, sans-serif;
 
         font-weight: 700;
+        
     }
 
     #logofornav {
@@ -272,11 +279,22 @@
     #doller {
         color: #357471;
     }
+    #scroll
+    {
+        overflow:-moz-hidden-unscrollable;
+        margin-top: 50px;
+    }
+    #position
+    {
+        position: fixed;
+        background-color: #FFFDF7;
+    }
 </style>
 
 <body>
     <!-- navbar start -->
     <!-- type of website bar -->
+    
     <div id="navpar">
         <div id="type">
             <div id="consumersite"> <img id="consum" onclick="window.location.href='home.html'" 
@@ -306,8 +324,9 @@
             </div>
         </div>
     </div>
+    
     <!-- nav bar ends -->
-
+<div id="scroll">
     <div id="logo">
         <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/6192ce7669f68694a8b969af_Group%20(8).svg"
             alt="Freshly logo">
@@ -757,49 +776,7 @@
         </div>
 
     </div>
-    
-<!-- <footer start> -->
-    <footer id="footer">
-        <div>
-            <div>
-                <a href="#"><img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg" width="120px"></a><br><br>
-                <p >&#169 Freshly Inc.</p>
-            </div>
-            <div>
-            <p>Company</p><br>
-            <a href="https://freshly.wd5.myworkdayjobs.com/freshly_careers">Careers</a><br><br>
-            <a href="https://www.freshly.com/contact">Contact Us</a><br><br>
-            <a href="https://about.freshly.com/press">Press</a><br><br>
-            <a href="https://www.freshly.com/terms">Terms</a><br><br>
-            <a href="https://about.freshly.com/privacy">Privacy</a><br><br>
-            </div>
-
-            <div id="style">
-                <p>Learn more</p><br>
-                <a href="plans and menu.html">Plans & Menu</a><br><br>
-                <a href="how_it_works.html">Why Freshly?</a><br><br>
-                <a href="Gifts.html.html">Gifts</a><br><br>
-                <a href="#">FAQs</a><br><br>
-                <a href="#">Blog</a><br><br>
-                <a href="#">Students</a><br><br>
-            </div>
-
-            <div>
-                <p>Join Us </p><br>
-
-                <a href="https://www.facebook.com/freshly" ><img class="ok" src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f52423bbc67c09879c5a19b_5d795c37fedbb6017d824b02_icons8-facebook-old-30.jpg" width="16px">
-                </a>
-                <a href="https://www.instagram.com/freshly/" ><img class="ok" src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f52423ad92101de48f410c7_5d10dfc0ef515f74b875a42c_icons8-instagram-50.jpg" width="16px"></a>
-                <a href="https://twitter.com/getfreshly" ><img class="ok" src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f52423bd050163202b341e8_5d10dfc00442bfc99d3d6828_icons8-twitter-filled-50.jpg" width="16px"></a>
-                <a href="https://www.pinterest.com/FreshlyEats/" ><img class="ok" src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f52423a6b26e039d505425e_5d10dfbfef515faad975a42b_icons8-pinterest-filled-50.jpg" width="16px"></a>
-                <br><br>
-                <a href="https://apps.apple.com/app/apple-store/id1195648107"><img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5d6439d4fb92e7630e46976b_Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" width="120px"></a><br><br>
-                <a href="https://play.google.com/store/apps/details?id=com.freshly.meal&utm_source=website&utm_campaign=footer&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5d643dd558306bfe1df5ef8b_google-play-badge.png" width="120px"></a><br><br>
-                
-            </div>
-        </div>
-    </footer>
-    <!-- <footer last> -->
+</div>
 </body>
 <script src="data.js"></script>
 
