@@ -269,7 +269,10 @@ else
 
 function reset()
 {
+    Cart1 = [];
     localStorage.removeItem("Cart1");
     document.getElementById("cart1").innerHTML = "";
+    document.getElementById("total").innerText = 0;
+    document.getElementById("totalitems").innerText = "0";
 
 }
