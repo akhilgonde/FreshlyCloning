@@ -106,14 +106,14 @@
                         <p id="pin">Pin</p>
                         <input id="ipin" type="text">
                         <p id="city">City</p>
-                        <input id="icity" text">
+                        <input id="icity" type="text">
                         <p id="phone">Phone</p>
                         <input id="iphone" type="text">
                         <p id="emeil"> Email (We require your email to send you receipts and order updates)</p>
                         <input type="email" id="iemeil">
                         <div id="fortotal">
                             <p>Total</p>
-                            <p> <span>₹</span> 0 </p>
+                            <p id="gettotal"> <span>₹</span> 0 </p>
                         </div>
                         <input id="submit" type="submit" value="Next">
 
@@ -205,6 +205,12 @@
         var lname = document.querySelector("#ilastname").value;
         document.querySelector("#ifullname").value = fname + " " + lname;
     }
+
+    var prar = JSON.parse(localStorage.getItem("pricecarry"))
+    console.log(prar)
+    prar.map(function (elem){
+        document.querySelector("#gettotal").textContent= elem.key1 ;
+    })
 
 
 </script>
