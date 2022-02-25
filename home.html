@@ -60,17 +60,17 @@
                 <p>See meals available in your area!</p>
                 <div id="inputs">
                     <div>Email Address</div>
-                    <div>ZIP Code</div>
+                    <div>Pin Code</div>
                     <div></div>
                     <div><input id="inputemail" placeholder=" freshly@freshly.com" type="text"></div>
-                    <div><input id="inputzip" placeholder="411028" type="text"></div>
-                    <div><button>Explore Meals</button></div>
+                    <div><input id="inputzip" placeholder="Enter Pin" type="text"></div>
+                    <div><button id="btofexp" onclick="exploreval()">Explore Meals</button></div>
 
                 </div>
             </div>
         </div>
         <div>
-            <button id="lmoraction"></button>
+            <button id="lmoraction" onclick="window.location.href='plans and menu.html'">Learn More</button>
             <!-- div of right side image -->
 
         </div>
@@ -173,7 +173,7 @@
                     <p>410 | Cal | Gluten Free | Single-Serve</p>
                 </div>
             </div>
-            <div id="viewplanacton">View Plan & Menu </div>
+            <div id="viewplanacton" onclick="window.location.href='plans and menu.html'">View Plan & Menu </div>
         </div>
         <!-- </div> -->
     </div>
@@ -219,7 +219,7 @@
     </div>
     <div id="signupactionnn">
         <p>Shipping and tax added at checkout</p>
-        <button>Sign Up Now</button>
+        <button onclick="window.location.href='signUp.html'">Sign Up Now</button>
     </div>
 
     <h1 id="whatother">What Others Are Saying</h1>
@@ -253,7 +253,7 @@
                     <h1>We believe eating right should be easy for everyone.</h1>
                     <p>Each Freshly meal is perfectly sized for 1 person to enjoy at 1 sitting. Our fully-prepared meals
                         are delivered fresh, and ready to eat in 3 minutes.</p>
-                    <button>Learn more</button>
+                    <button onclick="window.location.href='plans and menu.html'">Learn more</button>
                 </div>
             </div>
             <div id="withimgrs"></div>
@@ -270,8 +270,8 @@
                 <div>
                     <h1>Healthy Meals Delivered Weekly</h1>
                     <input id="email" placeholder="freshly@freshly.com" type="text">
-                    <br><input id="zip" placeholder="Zip" type="text">
-                    <br><button>Get Started !</button>
+                    <br><input id="zip" placeholder="Pin" type="text">
+                    <br><button onclick="exploreval2()">Get Started !</button>
                     <p>Already have an account? <a href="">Log in.</a> </p>
                     <p>By continuing, you agree to our <a href="">Terms</a> and <a href="">Privacy Policy.</a> & will
                         receive emails from Freshly.</p>
@@ -341,5 +341,26 @@
         }
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
+    }
+    function exploreval() {
+        var pinval = document.querySelector("#inputzip").value;
+        if (pinval.length == 6) {
+            alert(" Congratulations your area is servisable")
+            window.location.href = "plans and menu.html";
+        }
+        else {
+            alert("invalid Credentials")
+        }
+    }
+
+    function exploreval2() {
+        var pinva = document.querySelector("#zip").value;
+        if (pinva.length == 6) {
+            alert(" Congratulations your area is servisable please login or sign Up and enjoy meals ")
+
+        }
+        else {
+            alert("invalid Credentials")
+        }
     }
 </script>
