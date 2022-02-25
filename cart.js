@@ -1,9 +1,6 @@
 
         var arr = JSON.parse(localStorage.getItem("foodData")) || [];
-        
-        
-          
-        // console.log(Cart1);
+
 
 arr.map(function(ele,index)
     {
@@ -270,4 +267,7 @@ else
     
 }
 
-
+function reset()
+{
+    document.getElementById("cart1").innerHTML = ""; 
+}
