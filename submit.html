@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit a request</title>
+    <link rel="stylesheet" href="submit.css" />
+  </head>
+
+  <body style="background-color: #fffdf7">
+    <nav id="sub_req">
+      <div>
+        <a href="home.html"
+          ><img
+            src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
+            alt="freshly"
+        /></a>
+      </div>
+      <div><a class="sub_a" href="submit.html">Submit a request</a></div>
+      <div><a class="sub_a" href="login.html">Sign in</a></div>
+    </nav>
+    <section id="row1">
+      <div >
+      <p>Freshly > Submit a request</p>
+      </div>
+      <div><input id="input1" type="text" placeholder="Search" aria-label="Search"/></div>
+    </section>
+    <section id="row2">
+      <h1>Submit a request</h1>
+      <label>Your email address</label><br />
+      <input id="row2_inp1" type="text" /><br />
+      <label>Subject</label><br />
+      <input id="row2_inp2" type="text" /><br />
+      <label>How can we help you?</label><br />
+      <textarea id="row2_inp3"></textarea><br />
+      <p>
+        Please describe what you need help with and someone will get back to
+        you! Our average response time for support<br />
+        requests during business hours is just 30 minutes... zoom, zoom!
+      </p>
+      <label for="request-attachments">
+        Attachments<span class="optional">(optional)</span>
+      </label>
+      <div id="upload-dropzone" class="upload-dropzone" data-hc-focus="false">
+        <input type="file" multiple="true" id="request-attachments" data-fileupload="true" data-dropzone="upload-dropzone" data-error="upload-error" data-create-url="/hc/en-us/request_uploads" data-name="request[attachments][]" data-pool="request-attachments-pool" data-delete-confirm-msg="" aria-describedby="upload-error">
+        <span>
+          <a>Add file</a> or drop files here
+        </span>
+      </div>
+      <!-- <input type="file" multiple="true" id="request-attachments" data-fileupload="true" data-dropzone="upload-dropzone" data-error="upload-error" data-create-url="/hc/en-us/request_uploads" data-name="request[attachments][]" data-pool="request-attachments-pool" data-delete-confirm-msg="" aria-describedby="upload-error"><br /> -->
+      
+      <button onclick="storedata()">Submit</button>
+     
+         
+        </div>
+      </div>
+    </section>
+    <script src="submit.js"></script>
+  </body>
+</html>
