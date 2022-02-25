@@ -149,10 +149,10 @@ h3
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
     margin: 10px;
-    margin-top: 50px;
+    margin-top: 60px;
     gap :20px;
     width: 75%;
-    height: 580px;
+    height: 590px;
     overflow:scroll;
 
 }
@@ -185,7 +185,7 @@ h3
 {
     width: 25%;
     height: 300px;
-    margin-top: 50px;
+    margin-top: 60px;
     display: grid;
     grid-template-columns: repeat(1,0.30fr 0.50fr 0.20fr);
     gap : -30px;
@@ -225,7 +225,7 @@ h6+div
   position: absolute;
   left:75%;
   top :60%;
-  height:260px;
+  height:300px;
   width: 338px;
 }
 #button
@@ -235,8 +235,20 @@ h6+div
    margin: auto;
    margin-top: 50px;
    color: whitesmoke;
-   background-color: #2A6DFF;
-   
+   background-color: #2A6DFF; 
+   margin-bottom: 5px;  
+}
+#reset
+{
+    display: block;
+    background-color:red;  
+    width: auto;
+    height: 50px;
+    margin: auto;
+}
+h4
+{
+    color: whitesmoke;
 }
 #flex
 {
@@ -328,6 +340,7 @@ img+div
         <div id="totalitems"><h5>0</h5></div>  
          </div>
         <button id="button"><h2>NEXT</h2></button>
+        <button id="reset" onclick="reset()"><h4>Reset Cart</h4></button>
     </div>
    
 
