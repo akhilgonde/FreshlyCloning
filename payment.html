@@ -1,449 +1,506 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            font-family: FavoritFreshly,Helvetica Neue,Helvetica,Arial,sans-serif;
-             font-weight: 500;
-             color: #303030;
-             background-color: #fffdf7;
-        }
-        /* nav bar start here */
-#type {
-  width: 240px;
-  height: 25px;
-  margin-top: 0%;
-  /* border: 1px dashed red; */
-  display: flex;
-  margin: auto;
-  margin-bottom: 10px;
-}
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: FavoritFreshly, Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      color: #303030;
+      background-color: #fffdf7;
+    }
 
-#type > div {
-  /* border: 1px solid black; */
-  width: 120px;
-  height: 100%;
-  margin: auto;
-}
-#consum {
-  width: 52%;
-}
-#busi {
-  width: 90%;
-}
-#navpar {
-  width: 100%;
-  /* background-color: rgb(255, 255, 255);  */
-  /* position: fixed; */
-  /* top: 0px; */
-  /* border: 1px solid red; */
-  background-color: #fffdf7;
-}
-#navbar {
-  height: 50px;
-  /* border: dashed black 1px; */
-  width: 75%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-}
-#navbar > div {
-  height: 45%;
-  /* border: 1px solid red; */
-  margin-top: 15px;
-  font-family: Favoritfreshly, sans-serif;
+    /* nav bar start here */
+    #type {
+      width: 240px;
+      height: 25px;
+      margin-top: 0%;
+      /* border: 1px dashed red; */
+      display: flex;
+      margin: auto;
+      margin-bottom: 10px;
+    }
 
-  font-weight: 700;
-}
-#logofornav {
-  width: 100px;
-  margin-left: 10px;
-}
-#navitem {
-  display: flex;
-  width: auto;
-}
-#navitem > div {
-  /* border:1px solid green; */
-  margin: 0px 20px;
-  font-size: 14px;
-}
-#navitem > div:hover {
-  color: rgb(49, 103, 255);
-}
-#logsign {
-  height: 55%;
-  display: flex;
-  margin-top: 0px;
-  justify-content: center;
-}
-#logsign > div {
-  margin-right: 5px;
-}
-#logsign > button {
-  height: 30px;
-  background-color: rgb(49, 103, 255);
-  color: rgb(255, 255, 255);
-  margin: 0px 5px;
-  border: 0px;
-  height: auto;
-}
+    #type>div {
+      /* border: 1px solid black; */
+      width: 120px;
+      height: 100%;
+      margin: auto;
+    }
 
-/* nav bar ends here */
-        #container{
-            height:1250px;
-            width:650px;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            margin-left:210px;
-           margin-top: -10px;
-         background-color: #ffffff;
-        }
-        p{
-            font-size: 15px;
-        }
-        h4{
-            margin-top:30px;
-            font-size: 25px;
-            margin-left: 210px;
-        }
-        h6{
-            font-size: 15px;
-        }
-        #head{
-            display:flex;
-            justify-content: space-around;
-        }
-        h5{
-            font-size: 20px;
-            margin-left: -50px;
-        }
-        a{
-            font-size: 17px;
-            color:#3167ff;
-            margin-top: 36px;
-            margin-left: 100px;
-            margin-right: -20px;
-        }
-        #head2{
-            display: flex;
-            justify-content: space-around;
-            line-height: 0px;
-            margin-top: -20px;
-        }
-        #first{
-            font-size: 15px;
-            margin-left: -110px;
-        }
-        #last{
-            font-size: 15px;
-            margin-left: -112px;
-        } 
-        #name1{
-            margin-left: -110px;
-            margin-top: -5px;
-        }
-        #name2{
-            margin-left: -110px;
-            margin-top: -5px;
-        }
-        #full{
-            font-size: 15px;
-            margin-left:50px
-        }
-        #name3{
-            margin-top:-25px;
-            margin-left:50px;
-        }
-        #ad1{ 
-             margin-top:-25px;
-            margin-left:50px;
-        }
-        #ad2{ 
-             margin-top:-25px;
-            margin-left:50px;
-        }
-        #location{
-            display:flex;
-            justify-content: space-around;
-            margin-top: -25px;
-        }
-        #city{
-            margin-left: -27px;
-        }
-      #town{
-        margin-left: -26px;
-        margin-top: -25px;
-      }
-      #state{
-        margin-top: -25px;
-      }
-      #pin{
-        margin-top: -25px;
-      }
-      #h6{
-          margin-left: 50px;
-          margin-top: 15px;
-      }
-      #contact{
-          margin-left:50px;
-          margin-top:-25px;
-      }
-      #request{
-        margin-left:48px;
-      }
-      #email{
-        margin-left:48px;
-        margin-top: -25px;
-      }
-      hr{
-          width:87%;
-          margin-top: 40px;   
+    #consum {
+      width: 52%;
+    }
+
+    #busi {
+      width: 90%;
+    }
+
+    #navpar {
+      width: 100%;
+      /* background-color: rgb(255, 255, 255);  */
+      /* position: fixed; */
+      /* top: 0px; */
+      /* border: 1px solid red; */
+      background-color: #fffdf7;
+    }
+
+    #navbar {
+      height: 50px;
+      /* border: dashed black 1px; */
+      width: 75%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+    }
+
+    #navbar>div {
+      height: 45%;
+      /* border: 1px solid red; */
+      margin-top: 15px;
+      font-family: Favoritfreshly, sans-serif;
+
+      font-weight: 700;
+    }
+
+    #logofornav {
+      width: 100px;
+      margin-left: 10px;
+    }
+
+    #navitem {
+      display: flex;
+      width: auto;
+    }
+
+    #navitem>div {
+      /* border:1px solid green; */
+      margin: 0px 20px;
+      font-size: 14px;
+    }
+
+    #navitem>div:hover {
+      color: rgb(49, 103, 255);
+    }
+
+    #logsign {
+      height: 55%;
+      display: flex;
+      margin-top: 0px;
+      justify-content: center;
+    }
+
+    #logsign>div {
+      margin-right: 5px;
+    }
+
+    #logsign>button {
+      height: 30px;
+      background-color: rgb(49, 103, 255);
+      color: rgb(255, 255, 255);
+      margin: 0px 5px;
+      border: 0px;
+      height: auto;
+    }
+
+    /* nav bar ends here */
+    #container {
+      height: 1250px;
+      width: 650px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      margin-left: 210px;
+      margin-top: -10px;
+      background-color: #ffffff;
+    }
+
+    p {
+      font-size: 15px;
+    }
+
+    h4 {
+      margin-top: 30px;
+      font-size: 25px;
+      margin-left: 210px;
+    }
+
+    h6 {
+      font-size: 15px;
+    }
+
+    #head {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    h5 {
+      font-size: 20px;
+      margin-left: -50px;
+    }
+
+    a {
+      font-size: 17px;
+      color: #3167ff;
+      margin-top: 36px;
+      margin-left: 100px;
+      margin-right: -20px;
+    }
+
+    #head2 {
+      display: flex;
+      justify-content: space-around;
+      line-height: 0px;
+      margin-top: -20px;
+    }
+
+    #first {
+      font-size: 15px;
+      margin-left: -110px;
+    }
+
+    #last {
+      font-size: 15px;
+      margin-left: -112px;
+    }
+
+    #name1 {
+      margin-left: -110px;
+      margin-top: -5px;
+    }
+
+    #name2 {
+      margin-left: -110px;
+      margin-top: -5px;
+    }
+
+    #full {
+      font-size: 15px;
+      margin-left: 50px
+    }
+
+    #name3 {
+      margin-top: -25px;
+      margin-left: 50px;
+    }
+
+    #ad1 {
+      margin-top: -25px;
+      margin-left: 50px;
+    }
+
+    #ad2 {
+      margin-top: -25px;
+      margin-left: 50px;
+    }
+
+    #location {
+      display: flex;
+      justify-content: space-around;
+      margin-top: -25px;
+    }
+
+    #city {
+      margin-left: -27px;
+    }
+
+    #town {
+      margin-left: -26px;
+      margin-top: -25px;
+    }
+
+    #state {
+      margin-top: -25px;
+    }
+
+    #pin {
+      margin-top: -25px;
+    }
+
+    #h6 {
+      margin-left: 50px;
+      margin-top: 15px;
+    }
+
+    #contact {
+      margin-left: 50px;
+      margin-top: -25px;
+    }
+
+    #request {
+      margin-left: 48px;
+    }
+
+    #email {
+      margin-left: 48px;
+      margin-top: -25px;
+    }
+
+    hr {
+      width: 87%;
+      margin-top: 40px;
       color: #717171;
-      }
-      #pay{
-          margin-left: 45px;
-      }
-      ul{
-          margin-top: -20px;
-          line-height: 30px;
-      }
-      li{
-         cursor:pointer;
-         margin-left: 22px;
-      }
-      #credit{
-           margin-left: 39px;
-           margin-top: 20px;
-      }
-      #num{
-          margin-left:39px;
-          height:30px;
-          width:400px;
-          margin-top: -30px;
-      }
-      ::placeholder{
-          font-size: 16px;
-      }
-      #bank{
-          display:flex;
-          justify-content: space-around;
-          margin-left: -10px;
-      }
-      #date{
-          margin-left:0px;
-      }
-      #expiry{
-        margin-left:0px;
-        height:30px;
-        width:250px;
-        margin-top: -40px;
-      }
-      #cvc{
-        height:30px;
-        width:200px;
-        margin-top: -50px;    
-      }
-      #show{
-          display: flex;
-          justify-content: space-between;
-      }
-      #total{
-          margin-left: 40px;
-          font-size: 18px;
-      }
-      #cal{
-        margin-right: 50px;
-        font-size: 18px;
-      }
-      #submit{
-          height:50px;
-          width:570px;
-          text-align: center;
-          background-color: #3167ff;
-          color:white;
-          font-weight: bold;
-          font-size: 20px;
-          margin-left: 40px;
-          border:0px;
-          margin-top: -20px;
-      }
-      #italia{
-        color: #717171;
-        font-style: italic;
-        font-size: 90%;
-        font-weight: 300;
-        text-align: center;
-        margin-top: 20px;
-      }
-      #submit:hover{
-         background-color: #1e4ed1;
-        
-      }
-    </style>
+    }
+
+    #pay {
+      margin-left: 45px;
+    }
+
+    ul {
+      margin-top: -20px;
+      line-height: 30px;
+    }
+
+    li {
+      cursor: pointer;
+      margin-left: 22px;
+    }
+
+    #credit {
+      margin-left: 39px;
+      margin-top: 20px;
+    }
+
+    #num {
+      margin-left: 39px;
+      height: 30px;
+      width: 400px;
+      margin-top: -30px;
+    }
+
+    ::placeholder {
+      font-size: 16px;
+    }
+
+    #bank {
+      display: flex;
+      justify-content: space-around;
+      margin-left: -10px;
+    }
+
+    #date {
+      margin-left: 0px;
+    }
+
+    #expiry {
+      margin-left: 0px;
+      height: 30px;
+      width: 250px;
+      margin-top: -40px;
+    }
+
+    #cvc {
+      height: 30px;
+      width: 200px;
+      margin-top: -50px;
+    }
+
+    #show {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #total {
+      margin-left: 40px;
+      font-size: 18px;
+    }
+
+    #cal {
+      margin-right: 50px;
+      font-size: 18px;
+    }
+
+    #submit {
+      height: 50px;
+      width: 570px;
+      text-align: center;
+      background-color: #3167ff;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      margin-left: 40px;
+      border: 0px;
+      margin-top: -20px;
+    }
+
+    #italia {
+      color: #717171;
+      font-style: italic;
+      font-size: 90%;
+      font-weight: 300;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    #submit:hover {
+      background-color: #1e4ed1;
+
+    }
+  </style>
 </head>
+
 <body>
-     <!-- navbar start -->
-    <!-- type of website bar -->
-    <div id="navpar">
-        <div id="type">
-            <div id="consumersite"> <img id="consum"
-                    src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
-                    alt=" Freshly  logo"></div>
-            <div id="businesssite"> <img id="busi"
-                    src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f7b2e54745410836cfa3955_bizlogo_main-07.svg"
-                    alt="Business"> </div>
-        </div>
-        <!-- type of website bar ends  -->
-
-        <div id="navbar">
-            <div> <img id="logofornav"
-                    src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
-                    alt=" Freshly  logo"> </div>
-            <div id="navitem">
-                <div>Plans & Menu</div>
-                <div>How it Works</div>
-                <div>Gifts</div>
-                <div>Refer a friend</div>
-                <div>Help</div>
-            </div>
-            <!-- login and signup button -->
-            <div id="logsign">
-                <div>Login</div>
-                <button>Sign Up</button>
-            </div>
-        </div>
+  <!-- navbar start -->
+  <!-- type of website bar -->
+  <div id="navpar">
+    <div id="type">
+      <div id="consumersite"> <img id="consum"
+          src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
+          alt=" Freshly  logo"></div>
+      <div id="businesssite"> <img id="busi"
+          src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f7b2e54745410836cfa3955_bizlogo_main-07.svg"
+          alt="Business"> </div>
     </div>
-    <!-- nav bar ends -->
+    <!-- type of website bar ends  -->
 
-    <h4>Confirm Your Order Details</h4>
-    <div id="container">
-      <div id="head">
-         <h5>Delivery Address</h5>
-          <a href="">Change</a>
+    <div id="navbar">
+      <div> <img id="logofornav"
+          src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
+          alt=" Freshly  logo"> </div>
+      <div id="navitem">
+        <div onclick="window.location.href='plans and menu.html'">Plans & Menu</div>
+        <div onclick="window.location.href='how_it_works.html'">How it Works</div>
+        <div onclick="window.location.href='Gifts.html.html'">Gifts</div>
+        <div>Refer a friend</div>
+        <div onclick="window.location.href='help.html'">Help</div>
       </div>
-
-      <div id="head2">
-          <div>
-           <h6 id="first">First Name</h6>
-           <p id="name1">Pratik</p>
-        </div>
-           <div>
-               <h6 id="last">Last Name</h6>
-               <p id="name2">Paul</p>
-           </div>
+      <!-- login and signup button -->
+      <div id="logsign">
+        <div onclick="window.location.href='login.html'">Login</div>
+        <button onclick="window.location.href='signUp.html'">Sign Up</button>
       </div>
-      <h6 id="full">Full Name For Delivery Address</h6>
-      <p id="name3">Pratik Paul</p>
-
-      <h6 id="full">Address Line 1</h6>
-      <p id="ad1">GuruSankalp</p>
-      
-      <h6 id="full">Address Line 2</h6>
-      <p id="ad2">C wing</p>
-
-      <div id="location">
-            <div>
-                <h6 id="city">City</h6>
-                <p id="town">Kalamboli</p>
-            </div>
-
-            <div>
-                <h6>State</h6>
-                <p id="state">Maharashtra</p>
-            </div>
-            <div>
-                <h6>Pin Code</h6>
-                <p id="pin">410218</p>
-            </div>
-      </div>
-
-      <h6 id="h6">Phone</h6>
-      <p id="contact">8828375460</p>
-
-      <h6 id="request">Email(we require your email to send you receipts and order updates)</h6>
-      <p id="email">paulpratik6@gmail.com</p>
-      <hr>
-      <h5 id="pay">Payment Info</h5>
-      <ul type="circle">
-          <li>PayPal</li>
-          <li>Credit Card</li> 
-      </ul>
-      <hr>
-
-      <h6 id="credit">Credit Card Number</h6>
-      <input type="text" id="num" placeholder="   1234 1234 1234 1234 ">
-
-      <div id="bank">
-            <div>
-                <h6 id="date">Expiration</h6>
-                <input type="text" id="expiry" placeholder="  MM/YY">
-            </div>
-            <div>
-                <h6>CVC</h6>
-                <input type="text" id="cvc" placeholder="  CVC">
-            </div>
-      </div>
-
-      <div id="show">
-          <h6 id="total">Total</h6>
-          <h6 id="cal">$450</h6>
-      </div>
-      <input value="Submit Order" type="submit" id="submit"/>
-      <p id="italia">You can skip and cancel anytime*</p>
     </div>
+  </div>
+  <!-- nav bar ends -->
+
+  <h4>Confirm Your Order Details</h4>
+  <div id="container">
+    <div id="head">
+      <h5>Delivery Address</h5>
+      <a href="">Change</a>
+    </div>
+
+    <div id="head2">
+      <div>
+        <h6 id="first">First Name</h6>
+        <p id="name1">Pratik</p>
+      </div>
+      <div>
+        <h6 id="last">Last Name</h6>
+        <p id="name2">Paul</p>
+      </div>
+    </div>
+    <h6 id="full">Full Name For Delivery Address</h6>
+    <p id="name3">Pratik Paul</p>
+
+    <h6 id="full">Address Line 1</h6>
+    <p id="ad1">GuruSankalp</p>
+
+    <h6 id="full">Address Line 2</h6>
+    <p id="ad2">C wing</p>
+
+    <div id="location">
+      <div>
+        <h6 id="city">City</h6>
+        <p id="town">Kalamboli</p>
+      </div>
+
+      <div>
+        <h6>State</h6>
+        <p id="state">Maharashtra</p>
+      </div>
+      <div>
+        <h6>Pin Code</h6>
+        <p id="pin">410218</p>
+      </div>
+    </div>
+
+    <h6 id="h6">Phone</h6>
+    <p id="contact">8828375460</p>
+
+    <h6 id="request">Email(we require your email to send you receipts and order updates)</h6>
+    <p id="email">paulpratik6@gmail.com</p>
+    <hr>
+    <h5 id="pay">Payment Info</h5>
+    <ul type="circle">
+      <li>PayPal</li>
+      <li>Credit Card</li>
+    </ul>
+    <hr>
+
+    <h6 id="credit">Credit Card Number</h6>
+    <input type="text" id="num" placeholder="   1234 1234 1234 1234 ">
+
+    <div id="bank">
+      <div>
+        <h6 id="date">Expiration</h6>
+        <input type="text" id="expiry" placeholder="  MM/YY">
+      </div>
+      <div>
+        <h6>CVC</h6>
+        <input type="text" id="cvc" placeholder="  CVC">
+      </div>
+    </div>
+
+    <div id="show">
+      <h6 id="total">Total</h6>
+      <h6 id="cal">$450</h6>
+    </div>
+    <input value="Submit Order" type="submit" id="submit" />
+    <p id="italia">You can skip and cancel anytime*</p>
+  </div>
 </body>
+
 </html>
 <script>
 
-//    document.querySelector("#name1").innerText = ;
-//    document.querSelector("#name2").innerText = ;
-//    document.querSelector("#name3").innerText = ;
-//    document.querSelector("#ad1").innerText = ;
-//    document.querSelector("#ad2").innerText = ;
-//    document.querSelector("#town").innerText = ;
-//    document.querSelector("#state").innerText = ;
-//    document.querSelector("#pin").innerText = ;
-//    document.querSelector("#contact").innerText = ;
-//    document.querSelector("#email").innerText = ;
+  //    document.querySelector("#name1").innerText = ;
+  //    document.querSelector("#name2").innerText = ;
+  //    document.querSelector("#name3").innerText = ;
+  //    document.querSelector("#ad1").innerText = ;
+  //    document.querSelector("#ad2").innerText = ;
+  //    document.querSelector("#town").innerText = ;
+  //    document.querSelector("#state").innerText = ;
+  //    document.querSelector("#pin").innerText = ;
+  //    document.querSelector("#contact").innerText = ;
+  //    document.querSelector("#email").innerText = ;
 
-    var bankDetails=[{card:1000200030004000,expiry:1121,cvc:123},
-                     {card:5000600070008000,expiry:0822,cvc:456},
-                    ];
+  var bankDetails = [{ card: 1000200030004000, expiry: 1121, cvc: 123 },
+  { card: 5000600070008000, expiry: 0822, cvc: 456 },
+  ];
 
-    localStorage.setItem("data",JSON.stringify(bankDetails));
+  localStorage.setItem("data", JSON.stringify(bankDetails));
 
-    var details= JSON.parse(localStorage.getItem("data"));
-  
-    document.querySelector("#submit").addEventListener("click",formSubmit);
+  var details = JSON.parse(localStorage.getItem("data"));
 
-    function formSubmit(event){
-     
+  document.querySelector("#submit").addEventListener("click", formSubmit);
+
+  function formSubmit(event) {
+
     event.preventDefault();
 
-     var card= document.querySelector("#num").value;
-     var expiry=document.querySelector("#expiry").value;
-     var cvc= document.querySelector("#cvc").value;
-    
-     var flag=false;
+    var card = document.querySelector("#num").value;
+    var expiry = document.querySelector("#expiry").value;
+    var cvc = document.querySelector("#cvc").value;
 
-    for(var i=0; i<details.length; i++){
-        if(details[i].card == card && details[i].expiry == expiry && details[i].cvc == cvc){
-            flag= true;
-        }
+    var flag = false;
+
+    for (var i = 0; i < details.length; i++) {
+      if (details[i].card == card && details[i].expiry == expiry && details[i].cvc == cvc) {
+        flag = true;
+      }
     }
-    
-    if(flag == false){
-        alert("Invalid Information!")
+
+    if (flag == false) {
+      alert("Invalid Information!")
     }
-    else{
-        alert("Your Order is Placed Successfully!")
+    else {
+      alert("Your Order is Placed Successfully!")
     }
-    }
-    
-    
+  }
+
+
 </script>

@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href=" choose_page.css"/>
+    <link rel="stylesheet" href=" choose_page.css" />
 </head>
+
 <body>
-     <!-- navbar start -->
+    <!-- navbar start -->
     <!-- type of website bar -->
     <div id="navpar">
         <div id="type">
@@ -26,108 +28,111 @@
                     src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
                     alt=" Freshly  logo"> </div>
             <div id="navitem">
-                <div>Plans & Menu</div>
-                <div>How it Works</div>
-                <div>Gifts</div>
+                <div onclick="window.location.href='plans and menu.html'">Plans & Menu</div>
+                <div onclick="window.location.href='how_it_works.html'">How it Works</div>
+                <div onclick="window.location.href='Gifts.html.html'">Gifts</div>
                 <div>Refer a friend</div>
-                <div>Help</div>
+                <div onclick="window.location.href='help.html'">Help</div>
             </div>
             <!-- login and signup button -->
             <div id="logsign">
-                <div>Login</div>
-                <button>Sign Up</button>
+                <div onclick="window.location.href='login.html'">Login</div>
+                <button onclick="window.location.href='signUp.html'">Sign Up</button>
             </div>
         </div>
     </div>
     <!-- nav bar ends -->
 
     <div id="main">
-    <div><h1>Choose A Delivery Day</h1></div>
+        <div>
+            <h1>Choose A Delivery Day</h1>
+        </div>
 
-    <div id="date_window">
-        <div></div>
-        <div id="window">
-            <div id="special">
-                <div>
-                    <b>Sunday</b>, Feb 27
+        <div id="date_window">
+            <div></div>
+            <div id="window">
+                <div id="special">
+                    <div>
+                        <b>Sunday</b>, Feb 27
+                    </div>
+
+                    <div style="font-weight:bold; text-decoration:underline">
+                        Most Popular
+                    </div>
                 </div>
-                
-                <div style="font-weight:bold; text-decoration:underline">
-                    Most Popular
+
+                <div>
+                    <div id="fun"><b>Monday</b>, Feb 28</div>
+                </div>
+                <div>
+                    <div id="fun1"><b>Tuesday</b>, Mar 1</div>
+                </div>
+                <div>
+                    <div id="fun2"><b>Wednesday</b>, Mar 2</div>
+                </div>
+                <div>
+                    <div id="fun3"> <b>Thursday</b>, Mar 3</div>
+                </div>
+                <div>
+                    <div id="fun4"><b>Friday</b>, Mar 4</div>
+                </div>
+                <div>
+                    <div id="fun"><b>Saturday</b>, Mar 5</div>
+                </div>
+                <div>
+                    <div id="fun"><b>Sunday</b>, Mar 6</div>
+                </div>
+                <div>
+                    <div id="fun"><b>Monday</b>, Mar 7</div>
+                </div>
+                <div>
+                    <div id="fun"><b>Tuesday</b>, Mar 8</div>
+                </div>
+                <div>
+                    <div id="fun"><b>Wednesday</b>, Mar 9</div>
+                </div>
+                <div>
+                    <div id="fun"><b>Thursday</b>, Mar 10</div>
+                </div>
+                <div>
+                    <div id="fun"><b>Friday</b>, Mar 11</div>
+                </div>
+                <div>
+                    <div id="fun"><b>Saturday</b>, Mar 12</div>
+                </div>
+                <div>
+                    <div id="fun"><b>Sunday</b>, Mar 13</div>
                 </div>
             </div>
-        
-        <div>
-            <div id="fun"><b>Monday</b>, Feb 28</div>
-        </div>
-        <div>
-            <div id="fun1"><b>Tuesday</b>, Mar 1</div>
-        </div>
-        <div>
-           <div id="fun2"><b>Wednesday</b>, Mar 2</div> 
-        </div>
-        <div>
-          <div id="fun3"> <b>Thursday</b>, Mar 3</div> 
-        </div>
-        <div>
-            <div id="fun4"><b>Friday</b>, Mar 4</div>
-        </div>
-        <div>
-           <div id="fun"><b>Saturday</b>, Mar 5</div> 
-        </div>
-        <div>
-            <div id="fun"><b>Sunday</b>, Mar 6</div>
-        </div>
-        <div>
-            <div id="fun"><b>Monday</b>, Mar 7</div>
-        </div>
-        <div>
-            <div id="fun"><b>Tuesday</b>, Mar 8</div>
-        </div>
-        <div>
-            <div id="fun"><b>Wednesday</b>, Mar 9</div>
-        </div>
-        <div>
-           <div id="fun"><b>Thursday</b>, Mar 10</div> 
-        </div>
-        <div>
-            <div id="fun"><b>Friday</b>, Mar 11</div>
-        </div>
-        <div>
-            <div id="fun"><b>Saturday</b>, Mar 12</div>
-        </div>
-        <div>
-            <div id="fun"><b>Sunday</b>, Mar 13</div>
-        </div>
-        </div>
-        <div id="below_text">Scroll for more delivery dates</div>
-        <div></div>
-        <div>
-           <a href=""><button>Next</button></a> 
-        </div>
-        <div id="date"></div>
+            <div id="below_text">Scroll for more delivery dates</div>
+            <div></div>
+            <div>
+                <a href=""><button>Next</button></a>
+            </div>
+            <div id="date"></div>
 
-    </div>
+        </div>
     </div>
 
 </body>
+
 </html>
 <script>
-    
-    var dat=document.querySelector("#fun");
-    
-    dat.addEventListener("click",function(){
+
+    var dat = document.querySelector("#fun");
+
+    dat.addEventListener("click", function () {
         selected()
     });
 
-    function selected(){
-      
-      document.querySelector("#date").innerText="First Delivery Date:"+dat.innerText;
+    function selected() {
+
+        document.querySelector("#date").innerText = "First Delivery Date:" + dat.innerText;
     }
 
-    var dat1=document.querySelector("#fun1");
-    dat.addEventListener("click",function(){
-        document.querySelector("#date").innerText="First Delivery Date:"+dat1.innerText;
+    var dat1 = document.querySelector("#fun1");
+    dat.addEventListener("click", function () {
+        document.querySelector("#date").innerText = "First Delivery Date:" + dat1.innerText;
     })
 
     // var dat2=document.querySelector("#fun2");

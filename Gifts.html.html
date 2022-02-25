@@ -1,481 +1,558 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            background-color:#ffffff;
-            font-family: Favoritfreshly,sans-serif;
+        body {
+            background-color: #ffffff;
+            font-family: Favoritfreshly, sans-serif;
             color: #333;
             font-size: 14px;
             line-height: 1.43em;
             font-weight: 400;
         }
+
         /* nav bar start here */
-#type {
-  width: 240px;
-  height: 25px;
-  margin-top: 0%;
-  /* border: 1px dashed red; */
-  display: flex;
-  margin: auto;
-  margin-bottom: 10px;
-}
-
-#type > div {
-  /* border: 1px solid black; */
-  width: 120px;
-  height: 100%;
-  margin: auto;
-}
-#consum {
-  width: 52%;
-}
-#busi {
-  width: 90%;
-}
-#navpar {
-  width: 100%;
-  background-color: rgb(255, 255, 255); 
-  /* position: fixed; */
-  /* top: 0px; */
-  /* border: 1px solid red; */
-  background-color: #fffdf7;
-}
-#navbar {
-  height: 50px;
-  /* border: dashed black 1px; */
-  width: 75%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-}
-#navbar > div {
-  height: 45%;
-  /* border: 1px solid red; */
-  margin-top: 15px;
-  font-family: Favoritfreshly, sans-serif;
-
-  font-weight: 700;
-}
-#logofornav {
-  width: 100px;
-  margin-left: 10px;
-}
-#navitem {
-  display: flex;
-  width: auto;
-}
-#navitem > div {
-  /* border:1px solid green; */
-  margin: 0px 20px;
-  font-size: 14px;
-}
-#navitem > div:hover {
-  color: rgb(49, 103, 255);
-}
-#logsign {
-  height: 55%;
-  display: flex;
-  margin-top: 0px;
-  justify-content: center;
-}
-#logsign > div {
-  margin-right: 5px;
-}
-#logsign > button {
-  height: 30px;
-  background-color: rgb(49, 103, 255);
-  color: rgb(255, 255, 255);
-  margin: 0px 5px;
-  border: 0px;
-  height: auto;
-}
-
-/* nav bar ends here */
-        #container{
-            height:450px;
-            width:100%;
-            display:flex;
-        
+        #type {
+            width: 240px;
+            height: 25px;
+            margin-top: 0%;
+            /* border: 1px dashed red; */
+            display: flex;
+            margin: auto;
+            margin-bottom: 10px;
         }
-        button{
+
+        #type>div {
+            /* border: 1px solid black; */
+            width: 120px;
+            height: 100%;
+            margin: auto;
+        }
+
+        #consum {
+            width: 52%;
+        }
+
+        #busi {
+            width: 90%;
+        }
+
+        #navpar {
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            /* position: fixed; */
+            /* top: 0px; */
+            /* border: 1px solid red; */
+            background-color: #fffdf7;
+        }
+
+        #navbar {
+            height: 50px;
+            /* border: dashed black 1px; */
+            width: 75%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        #navbar>div {
+            height: 45%;
+            /* border: 1px solid red; */
+            margin-top: 15px;
+            font-family: Favoritfreshly, sans-serif;
+
+            font-weight: 700;
+        }
+
+        #logofornav {
+            width: 100px;
+            margin-left: 10px;
+        }
+
+        #navitem {
+            display: flex;
+            width: auto;
+        }
+
+        #navitem>div {
+            /* border:1px solid green; */
+            margin: 0px 20px;
+            font-size: 14px;
+        }
+
+        #navitem>div:hover {
+            color: rgb(49, 103, 255);
+        }
+
+        #logsign {
+            height: 55%;
+            display: flex;
+            margin-top: 0px;
+            justify-content: center;
+        }
+
+        #logsign>div {
+            margin-right: 5px;
+        }
+
+        #logsign>button {
+            height: 30px;
+            background-color: rgb(49, 103, 255);
+            color: rgb(255, 255, 255);
+            margin: 0px 5px;
+            border: 0px;
+            height: auto;
+        }
+
+        /* nav bar ends here */
+        #container {
+            height: 450px;
+            width: 100%;
+            display: flex;
+
+        }
+
+        button {
             background-color: white;
-            color:#3167ff;
-            border:1px solid #3167ff;
+            color: #3167ff;
+            border: 1px solid #3167ff;
             font-size: 18px;
-            height:40px;
-            width:130px;
+            height: 40px;
+            width: 130px;
         }
-        #btn{
+
+        #btn {
             background-color: #3167ff;
-            color:white;
-            border:1px solid white;
+            color: white;
+            border: 1px solid white;
             font-size: 18px;
             margin-right: 10px;
         }
-        #child1{
-            height:430px;
-            width:40%;
-            padding:40px;
-        
+
+        #child1 {
+            height: 430px;
+            width: 40%;
+            padding: 40px;
+
         }
-        #child2{
-            height:430px;
-            width:60%;  
+
+        #child2 {
+            height: 430px;
+            width: 60%;
         }
-        img{
+
+        img {
             object-fit: cover;
-            height:450px;
-            width:100%;
+            height: 450px;
+            width: 100%;
         }
-        #head1{
-            font-family: Favoritfreshly,sans-serif;
-            margin-top:70px;
+
+        #head1 {
+            font-family: Favoritfreshly, sans-serif;
+            margin-top: 70px;
             line-height: 52px;
             font-size: 48px;
             color: #333;
             font-weight: 700;
         }
-        #head2{
+
+        #head2 {
             font-size: 16px;
             line-height: 20px;
-           font-weight: 700;
-           font-family: Favoritfreshly,sans-serif;
-           color: #333;
+            font-weight: 700;
+            font-family: Favoritfreshly, sans-serif;
+            color: #333;
         }
-        h2{
+
+        h2 {
             padding-bottom: 0;
             font-size: 38px;
             line-height: 1.16em;
             font-weight: 700;
             text-align: center;
         }
-        #process{
+
+        #process {
             display: flex;
             justify-content: space-around;
-           
+
         }
-        #unit1{
-            height:250px;
-            width:400px;
+
+        #unit1 {
+            height: 250px;
+            width: 400px;
             text-align: center;
-      
-          box-sizing: border-box;
-        
-        }
-        #unit2{
-            height:250px;
-            width:400px;
-            text-align: center;
-           
+
             box-sizing: border-box;
-            padding:0px 10px;
+
         }
-        #unit3{
-            height:250px;
-            width:400px;
+
+        #unit2 {
+            height: 250px;
+            width: 400px;
             text-align: center;
-         
+
             box-sizing: border-box;
-            padding:0px 10px;
+            padding: 0px 10px;
         }
-        #unit1>img{
-            height:50%;
-            width:50%;
+
+        #unit3 {
+            height: 250px;
+            width: 400px;
+            text-align: center;
+
+            box-sizing: border-box;
+            padding: 0px 10px;
         }
-        #unit2>img{
-            height:50%;
-            width:50%;
+
+        #unit1>img {
+            height: 50%;
+            width: 50%;
         }
-        #unit3>img{
-            height:50%;
-            width:50%;
+
+        #unit2>img {
+            height: 50%;
+            width: 50%;
         }
-       #title{
-           font-size: 24px;
-       }
-       #title2{
-           font-size: 24px;
-           padding:0px 20px;
-       }
-       #title3{
-           font-size: 24px;
-        
-       }
-       p{
-           font-size: 14px;
-       }
-       #needs{
-           font-size: 38px;
-           margin-top: 150px;
-       }
-       #details{
-           text-align: center;
-           width:34.2%;
-        margin:auto;
-       }
-       #problems{
-           display:flex;
-           height:370px;
-           width:100%;
-          
-           margin-top: 50px;
-           gap:80px;
-           justify-content: center;
-       }
-       #problems>div{
-           height:370px;
-           width:320px;
-      
-           text-align: center;
-          
-       }
-       #problems>div>img{
-           height:60.8%;
-           width:90%;
-           object-fit: cover;
-           
-       }
-       #h3{
-           font-size: 22px;
-       }
-       #imgcontainer{
-           height:1000px;
-           width:100%;
-        
-           margin-top: 80px;
-       }
-       #imgcontainer>img{
-           height:1000px;
-           width:100%;
-           position:relative;
-          
-       }
-       #innerContainer{
-           position:absolute;
-           top:1690px;
-         
-           height:800px;
-           width:70%;
-           margin-left: 250px;
-           background-color: #ffffff;
+
+        #unit3>img {
+            height: 50%;
+            width: 50%;
+        }
+
+        #title {
+            font-size: 24px;
+        }
+
+        #title2 {
+            font-size: 24px;
+            padding: 0px 20px;
+        }
+
+        #title3 {
+            font-size: 24px;
+
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        #needs {
+            font-size: 38px;
+            margin-top: 150px;
+        }
+
+        #details {
+            text-align: center;
+            width: 34.2%;
+            margin: auto;
+        }
+
+        #problems {
+            display: flex;
+            height: 370px;
+            width: 100%;
+
+            margin-top: 50px;
+            gap: 80px;
+            justify-content: center;
+        }
+
+        #problems>div {
+            height: 370px;
+            width: 320px;
+
+            text-align: center;
+
+        }
+
+        #problems>div>img {
+            height: 60.8%;
+            width: 90%;
+            object-fit: cover;
+
+        }
+
+        #h3 {
+            font-size: 22px;
+        }
+
+        #imgcontainer {
+            height: 1000px;
+            width: 100%;
+
+            margin-top: 80px;
+        }
+
+        #imgcontainer>img {
+            height: 1000px;
+            width: 100%;
+            position: relative;
+
+        }
+
+        #innerContainer {
+            position: absolute;
+            top: 1690px;
+
+            height: 800px;
+            width: 70%;
+            margin-left: 250px;
+            background-color: #ffffff;
 
 
-       }
-       #quest{
-           font-size: 38px;
-           margin-top: 50px;
-       }
-      
-       #questions{
-           height:500px;
-           width: 60%;
-           margin:auto;
-           margin-top: 50px;
-           line-height: 40px;
-       }
-       hr{
-           border-bottom: 1px solid hsla(0,0%,78.8%,.75);
-       }
-       #choice{
-              font-size: 38px; 
-              margin-top: 70px;
-       }
-       #para{
-           text-align: center;
-           margin-top: -18px;
-       }
-       #gridContainer{
-        display: grid;
-        grid-template-columns: repeat(4,200px);
-        grid-template-rows: repeat(2,160px);
-        margin-top: 40px;
-        justify-content: center;
-        gap:10px;
-        grid-template-areas: 
-        "a b c d"
-        "e f g h";
-       }
-       #gridContainer>div{
-           height:210px;
-           width:160px;
-          
-           border-radius: 10px;
-           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-         
-       }
-       #gridContainer>div>img{
-           height:60%;
-           width:100%;
-           object-fit: cover;
-       }
-       #menu-card-title{
-           font-size: 16px;
-           text-align: center;
-           margin-top: 1px;
-       }
-       .a{
-         grid-area: a;
-       }
-       .b{
-        grid-area: b;
         }
-        .c{
+
+        #quest {
+            font-size: 38px;
+            margin-top: 50px;
+        }
+
+        #questions {
+            height: 500px;
+            width: 60%;
+            margin: auto;
+            margin-top: 50px;
+            line-height: 40px;
+        }
+
+        hr {
+            border-bottom: 1px solid hsla(0, 0%, 78.8%, .75);
+        }
+
+        #choice {
+            font-size: 38px;
+            margin-top: 70px;
+        }
+
+        #para {
+            text-align: center;
+            margin-top: -18px;
+        }
+
+        #gridContainer {
+            display: grid;
+            grid-template-columns: repeat(4, 200px);
+            grid-template-rows: repeat(2, 160px);
+            margin-top: 40px;
+            justify-content: center;
+            gap: 10px;
+            grid-template-areas:
+                "a b c d"
+                "e f g h";
+        }
+
+        #gridContainer>div {
+            height: 210px;
+            width: 160px;
+
+            border-radius: 10px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        }
+
+        #gridContainer>div>img {
+            height: 60%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        #menu-card-title {
+            font-size: 16px;
+            text-align: center;
+            margin-top: 1px;
+        }
+
+        .a {
+            grid-area: a;
+        }
+
+        .b {
+            grid-area: b;
+        }
+
+        .c {
             grid-area: c;
         }
-        .d{
+
+        .d {
             grid-area: d;
 
         }
-        .e{
+
+        .e {
             grid-area: e;
             margin-top: 60px;
         }
-        .f{
+
+        .f {
             grid-area: f;
             margin-top: 60px;
         }
-        .g{
+
+        .g {
             grid-area: g;
             margin-top: 60px;
         }
-        .h{
+
+        .h {
             grid-area: h;
             margin-top: 60px;
         }
-        #push{
+
+        #push {
             margin-top: 160px;
-            margin-left:460px;
-            color:white;
+            margin-left: 460px;
+            color: white;
             background-color: #3167ff;
-            border:1px solid #3167ff;
-            height:50px;
-            width:150px;
+            border: 1px solid #3167ff;
+            height: 50px;
+            width: 150px;
 
         }
 
-        @media all and (min-width:400px) and (max-width:700px){
-            #container{
-            height:450px;
-            width:100%;
-            display:grid;
-             grid-template-columns: 1fr;
-             grid-template-rows: repeat(2,1fr);
-             grid-template-areas: 
-             "b"
-             "a";
+        @media all and (min-width:400px) and (max-width:700px) {
+            #container {
+                height: 450px;
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(2, 1fr);
+                grid-template-areas:
+                    "b"
+                    "a";
 
-        }
-        #head1{
-            margin-top: 0px;
-            text-align:center;
-            padding-right: 350px;
-            
-        }
-        #head2{
-            text-align: left;
-        }
-      
-        #child1{
-            height:430px;
-            width:auto;
-           justify-content: center;
-         
-            border:1px solid white; 
-        }
-        img{
-            object-fit: cover;
-            height:450px;
-            width:auto;
-        }
-        .press{
-            justify-content: center;
-        }
-        button{
-            background-color: white;
-            color:#3167ff;
-            border:1px solid #3167ff;
-            font-size: 18px;
-            height:40px;
-            width:auto;
-           margin: auto;
-          
-        }
-        #btn{
-            background-color: #3167ff;
-            color:white;
-            border:1px solid white;
-            font-size: 18px;
-            width:auto;
-            margin: auto;
-        }
-        .a{
-            grid-area: a;
+            }
 
-        }
-        .b{
-            grid-area: b;
-        }
-    
-        .h2{
-            margin-top: 400px;
-            text-align: center;
-        }
-        #process{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(3,1fr);
-            grid-template-areas: 
-             "uni1"
-             "uni2"
-             "uni3";
-           
-        }
-        .uni1{
-            margin-top: 20px;
-            grid-area: uni1;
-            margin: auto;
-            
-        }
-        .uni2{
-            grid-area: uni2;
-            margin: auto;
-        }
-        .uni3{
-            grid-area: uni3;
-            margin: auto;
-        }
-        #needs{
-         text-align: center;
-        }
-        #details{
-            text-align:center;
-           width:80%;
-        }
-        #imgContainer{
-            /* margin-top: 5500px; */
-            height:0px;
-        }
-        #imgContainer>img{
-            /* margin-top: 5500px; */
-            height:0px;
-        }
-        #gridContainer{
-            /* margin-top: 1500px; */
-            margin:auto;
-            text-align: center;
-        }
-         #innerContainer{
-             margin-top: 1000px;
-           
-        } 
+            #head1 {
+                margin-top: 0px;
+                text-align: center;
+                padding-right: 350px;
 
-        /* #problems{
+            }
+
+            #head2 {
+                text-align: left;
+            }
+
+            #child1 {
+                height: 430px;
+                width: auto;
+                justify-content: center;
+
+                border: 1px solid white;
+            }
+
+            img {
+                object-fit: cover;
+                height: 450px;
+                width: auto;
+            }
+
+            .press {
+                justify-content: center;
+            }
+
+            button {
+                background-color: white;
+                color: #3167ff;
+                border: 1px solid #3167ff;
+                font-size: 18px;
+                height: 40px;
+                width: auto;
+                margin: auto;
+
+            }
+
+            #btn {
+                background-color: #3167ff;
+                color: white;
+                border: 1px solid white;
+                font-size: 18px;
+                width: auto;
+                margin: auto;
+            }
+
+            .a {
+                grid-area: a;
+
+            }
+
+            .b {
+                grid-area: b;
+            }
+
+            .h2 {
+                margin-top: 400px;
+                text-align: center;
+            }
+
+            #process {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-areas:
+                    "uni1"
+                    "uni2"
+                    "uni3";
+
+            }
+
+            .uni1 {
+                margin-top: 20px;
+                grid-area: uni1;
+                margin: auto;
+
+            }
+
+            .uni2 {
+                grid-area: uni2;
+                margin: auto;
+            }
+
+            .uni3 {
+                grid-area: uni3;
+                margin: auto;
+            }
+
+            #needs {
+                text-align: center;
+            }
+
+            #details {
+                text-align: center;
+                width: 80%;
+            }
+
+            #imgContainer {
+                /* margin-top: 5500px; */
+                height: 0px;
+            }
+
+            #imgContainer>img {
+                /* margin-top: 5500px; */
+                height: 0px;
+            }
+
+            #gridContainer {
+                /* margin-top: 1500px; */
+                margin: auto;
+                text-align: center;
+            }
+
+            #innerContainer {
+                margin-top: 1000px;
+
+            }
+
+            /* #problems{
            display:grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3,1fr);
@@ -503,8 +580,9 @@
         }
     </style>
 </head>
+
 <body>
-     <!-- navbar start -->
+    <!-- navbar start -->
     <!-- type of website bar -->
     <div id="navpar">
         <div id="type">
@@ -522,16 +600,16 @@
                     src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
                     alt=" Freshly  logo"> </div>
             <div id="navitem">
-                <div>Plans & Menu</div>
-                <div>How it Works</div>
-                <div>Gifts</div>
+                <div onclick="window.location.href='plans and menu.html'">Plans & Menu</div>
+                <div onclick="window.location.href='how_it_works.html'">How it Works</div>
+                <div onclick="window.location.href='Gifts.html.html'">Gifts</div>
                 <div>Refer a friend</div>
-                <div>Help</div>
+                <div onclick="window.location.href='help.html'">Help</div>
             </div>
             <!-- login and signup button -->
             <div id="logsign">
-                <div>Login</div>
-                <button>Sign Up</button>
+                <div onclick="window.location.href='login.html'">Login</div>
+                <button onclick="window.location.href='signUp.html'">Sign Up</button>
             </div>
         </div>
     </div>
@@ -550,137 +628,154 @@
 
 
         <div class="b" id="child2">
-            <img src="https://www.mensjournal.com/wp-content/uploads/2021/03/Screen-Shot-2021-03-24-at-9.47.00-AM.png?w=900&h=506&crop=1&quality=86&strip=all" alt="">
+            <img src="https://www.mensjournal.com/wp-content/uploads/2021/03/Screen-Shot-2021-03-24-at-9.47.00-AM.png?w=900&h=506&crop=1&quality=86&strip=all"
+                alt="">
         </div>
     </div>
 
     <h2 class="h2">How The Gift Works</h2>
-    
+
     <div id="process">
         <div class="uni1" id="unit1">
-            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTd806VMAFOHHqAwiw9BnsNw795tBwL4QtMO2yGFpsktKyW-Y5Y" alt="">
-        <h4 id="title">You choose the plan size</h4>
-        <p>Your gift starts their subscription on a free note by covering your 
-            recipient’s first delivery of fresh meals.</p>
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTd806VMAFOHHqAwiw9BnsNw795tBwL4QtMO2yGFpsktKyW-Y5Y"
+                alt="">
+            <h4 id="title">You choose the plan size</h4>
+            <p>Your gift starts their subscription on a free note by covering your
+                recipient’s first delivery of fresh meals.</p>
         </div>
 
         <div class="uni2" id="unit2">
-            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSKQV1NsKelPhW6sSRbGx4N5NjeetTXLrKy7O0WiqK_paULbwtp" alt="">
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSKQV1NsKelPhW6sSRbGx4N5NjeetTXLrKy7O0WiqK_paULbwtp"
+                alt="">
             <h4 id="title2">They take it from there</h4>
             <p>Your recipient will pick their first box of meals and set up their deliveries.</p>
         </div>
 
         <div class="uni3" id="unit3">
-            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhCEukEkIFej3PESK7kli0mFJ_02kXuZk0Bs3h7MImf7ABrWEl" alt="">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhCEukEkIFej3PESK7kli0mFJ_02kXuZk0Bs3h7MImf7ABrWEl"
+                alt="">
             <h4 id="title3">We cook and deliver</h4>
-            <p>We cook their meals and send them directly to their door. After this first box, 
+            <p>We cook their meals and send them directly to their door. After this first box,
                 they can skip deliveries or cancel their subscription anytime.</p>
         </div>
     </div>
 
-            <h2 id="needs">Eating is On Everyone’s List</h2>
-            <p id="details">Freshly delivers chef-cooked meals perfect for friends and family that least expect it,
-                    but might need it the most. With no cooking, cleaning, shopping, 
-                each meal you give is one less thing for them to worry about.</p>
+    <h2 id="needs">Eating is On Everyone’s List</h2>
+    <p id="details">Freshly delivers chef-cooked meals perfect for friends and family that least expect it,
+        but might need it the most. With no cooking, cleaning, shopping,
+        each meal you give is one less thing for them to worry about.</p>
 
-       <div id="problems">
+    <div id="problems">
 
-           <div class="b1">
-            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5da1020e8c4ffd7f66ed273a_shutterstock-536517748%402x.jpg" alt="">
+        <div class="b1">
+            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5da1020e8c4ffd7f66ed273a_shutterstock-536517748%402x.jpg"
+                alt="">
             <h3 id="h3">Perfect for New Parents</h3>
             <p>Help them feed a new mouth (or two or three) by feeding theirs.</p>
+        </div>
+
+
+        <div class="b2">
+            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5da1021b621f6c2f2e043f9e_shutterstock-229409923%402x.jpg"
+                alt="">
+            <h3 id="h3">Someone Who Needs Some TLC</h3>
+            <p>So your sick or injured friends can just focus on feeling better.</p>
+        </div>
+
+
+        <div class="b3">
+            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5da10232eda8426ae2d935f0_working-lunch-risotto-0035%402x.jpg"
+                alt="">
+            <h3 id="h3">Or the Dawn to Dusker</h3>
+            <p>They're starting businesses and new jobs. You’re there to help with healthy meals</p>
+        </div>
+
+    </div>
+
+
+    <div id="imgcontainer">
+        <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/61f12af4f52ee03d406532a2_22_Gifts_GiftofChoice_BG_1440%20x%20890.jpg"
+            alt="">
+    </div>
+
+    <div id="innerContainer">
+        <h2 id="choice">The Gift Of Choice</h2>
+        <p id="para">Variety is the spice of life—and we’ve got plenty when it comes to our meals.</p>
+
+        <div id="gridContainer">
+
+            <div class="a">
+                <img src="https://res.cloudinary.com/freshly/image/upload/c_fill,dpr_2,f_auto,w_666/v1637012873/production-meal-image-2fd3df62-8abf-413e-8650-afca039518ec.jpg"
+                    alt="">
+                <h4 id="menu-card-title">Steak Peppercorn</h4>
             </div>
 
+            <div class="b">
+                <img src="https://res.cloudinary.com/freshly/image/upload/c_fill,dpr_2,f_auto,w_666/v1637012265/production-meal-image-e4122aa8-0fe7-4854-b6f5-e27e0c5be918.jpg"
+                    alt="">
+                <h4 id="menu-card-title">Homestyle Chicken</h4>
+            </div>
 
-           <div class="b2">
-            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5da1021b621f6c2f2e043f9e_shutterstock-229409923%402x.jpg" alt="">
-            <h3 id="h3">Someone Who Needs Some TLC</h3>
-            <p>So your sick or injured friends can just focus on feeling better.</p>  
-           </div>
+            <div class="c">
+                <img src="https://res.cloudinary.com/freshly/image/upload/c_fill,dpr_2,f_auto,w_666/v1637012554/production-meal-image-c9eef45a-97a9-487c-9550-71488e5f639a.jpg"
+                    alt="">
+                <h4 id="menu-card-title">Cauliflower Shell Beef Bolognese</h4>
+            </div>
 
+            <div class="d">
+                <img src="https://res.cloudinary.com/freshly/image/upload/c_fill,dpr_2,f_auto,w_666/v1637012391/production-meal-image-f0de55be-d691-4ade-bc26-b4a8aedaa1fe.jpg"
+                    alt="">
+                <h4 id="menu-card-title">Sausage Baked Penne</h4>
+            </div>
 
-           <div class="b3">
-            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5da10232eda8426ae2d935f0_working-lunch-risotto-0035%402x.jpg" alt="">
-            <h3 id="h3">Or the Dawn to Dusker</h3>
-            <p>They're starting businesses and new jobs. You’re there to help with healthy meals</p>    
-           </div>
+            <div class="e">
+                <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6b8e6dd23b60cb122654_production-meal-image-92ec0fc1-d352-4720-9b83-96798ab8d2de.jpeg"
+                    alt="">
+                <h4 id="menu-card-title">Savory-Sweet Chicken Teriyaki Bowl</h4>
+            </div>
 
-       </div>
+            <div class="f">
+                <img src="https://res.cloudinary.com/freshly/image/upload/c_fill,dpr_2,f_auto,w_666/v1607770959/production-meal-image-7a62bb89-9bcb-4f1f-9f0f-d8372698d48e.jpg"
+                    alt="">
+                <h4 id="menu-card-title">Protein-Packed Chicken Parm</h4>
+            </div>
 
+            <div class="g">
+                <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6b9a85b43c3383a0a3b3_production-meal-image-ef64cbd3-cc91-4c5f-9865-b9ff0442572e.jpeg"
+                    alt="">
+                <h4 id="menu-card-title">Zingy Buffalo Chicken</h4>
+            </div>
 
-       <div id="imgcontainer">
-           <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/61f12af4f52ee03d406532a2_22_Gifts_GiftofChoice_BG_1440%20x%20890.jpg" alt="">
-       </div>
+            <div class="h">
+                <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6c2c5a38e27cd54e521b_production-meal-image-93da874b-3677-4881-9674-1a9f3a39ba38.jpeg"
+                    alt="">
+                <h4 id="menu-card-title">Wintertime Turkey Meatloaf</h4>
+            </div>
 
-       <div id="innerContainer">
-           <h2 id="choice">The Gift Of Choice</h2>
-           <p id="para">Variety is the spice of life—and we’ve got plenty when it comes to our meals.</p>
+        </div>
 
-  <div id="gridContainer">
+        <button id="push">Give Freshly</button>
 
-           <div class="a">
-               <img src="https://res.cloudinary.com/freshly/image/upload/c_fill,dpr_2,f_auto,w_666/v1637012873/production-meal-image-2fd3df62-8abf-413e-8650-afca039518ec.jpg" alt="">
-               <h4 id="menu-card-title">Steak Peppercorn</h4>
-           </div>
-
-           <div class="b">
-            <img src="https://res.cloudinary.com/freshly/image/upload/c_fill,dpr_2,f_auto,w_666/v1637012265/production-meal-image-e4122aa8-0fe7-4854-b6f5-e27e0c5be918.jpg" alt="">
-            <h4 id="menu-card-title">Homestyle Chicken</h4>
-           </div>
-
-           <div class="c">
-            <img src="https://res.cloudinary.com/freshly/image/upload/c_fill,dpr_2,f_auto,w_666/v1637012554/production-meal-image-c9eef45a-97a9-487c-9550-71488e5f639a.jpg" alt="">
-            <h4 id="menu-card-title">Cauliflower Shell Beef Bolognese</h4>
-           </div>
-
-           <div class="d">
-            <img src="https://res.cloudinary.com/freshly/image/upload/c_fill,dpr_2,f_auto,w_666/v1637012391/production-meal-image-f0de55be-d691-4ade-bc26-b4a8aedaa1fe.jpg" alt="">
-            <h4 id="menu-card-title">Sausage Baked Penne</h4>
-           </div>
-
-           <div class="e">
-            <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6b8e6dd23b60cb122654_production-meal-image-92ec0fc1-d352-4720-9b83-96798ab8d2de.jpeg" alt="">
-            <h4 id="menu-card-title">Savory-Sweet Chicken Teriyaki Bowl</h4>
-           </div>
-
-           <div class="f">
-            <img src="https://res.cloudinary.com/freshly/image/upload/c_fill,dpr_2,f_auto,w_666/v1607770959/production-meal-image-7a62bb89-9bcb-4f1f-9f0f-d8372698d48e.jpg" alt="">
-            <h4 id="menu-card-title">Protein-Packed Chicken Parm</h4>
-           </div>
-
-           <div class="g">
-            <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6b9a85b43c3383a0a3b3_production-meal-image-ef64cbd3-cc91-4c5f-9865-b9ff0442572e.jpeg" alt="">
-            <h4 id="menu-card-title">Zingy Buffalo Chicken</h4>
-           </div>
-
-           <div class="h">
-            <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6c2c5a38e27cd54e521b_production-meal-image-93da874b-3677-4881-9674-1a9f3a39ba38.jpeg" alt="">
-            <h4 id="menu-card-title">Wintertime Turkey Meatloaf</h4>
-           </div>
-         
-     </div>
-
-       <button id="push">Give Freshly</button>
-
-       </div>
+    </div>
 
 
-       <h2 id="quest">Common Questions</h2>
+    <h2 id="quest">Common Questions</h2>
 
-       <div id="questions">
-           <h3>How many servings are your meals?</h3>
-           <hr>
-           <h3>Do you accommodate dietary preferences?</h3>
-           <hr>
-           <h3>How long do the meals last?</h3>
-           <hr>
-           <h3>How do I heat up my meals?</h3>
-           <hr>
-           <h3>How does shipping work?</h3>
-           <hr>
-           <h3>How does subscription work?</h3>
-           <hr>
-           <h3>How do gift cards work?</h3>
-       </div>
+    <div id="questions">
+        <h3>How many servings are your meals?</h3>
+        <hr>
+        <h3>Do you accommodate dietary preferences?</h3>
+        <hr>
+        <h3>How long do the meals last?</h3>
+        <hr>
+        <h3>How do I heat up my meals?</h3>
+        <hr>
+        <h3>How does shipping work?</h3>
+        <hr>
+        <h3>How does subscription work?</h3>
+        <hr>
+        <h3>How do gift cards work?</h3>
+    </div>
 </body>
+
 </html>
