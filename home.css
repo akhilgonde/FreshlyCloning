@@ -301,13 +301,13 @@ button {
   height: 78%;
   margin-left: auto;
   margin-right: auto;
-  grid-template-columns: repeat(3, 213px);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 290px);
   gap: 16px;
   /* margin: auto; */
 }
 #parof6 > div > img {
-  width: 213px;
+  width: 100%;
   height: 190px;
   object-fit: cover;
   border-radius: 16px;
