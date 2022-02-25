@@ -101,21 +101,19 @@ function display() {
 
     document.getElementById("total").innerText = Math.round(
       Cart1.reduce(function (acc, ele) {
-        return acc + ele.quant * 11.79;
+
+        var totalpriceofcart = acc + ele.quant * 11.79
+        var praect = [{ key1: totalpriceofcart }];
+              // console.log(praect)
+      localStorage.setItem("pricecarry", JSON.stringify(praect));
+        return acc + ele.quant * 11.79 ;
       }, 0)
     );
 
-    document.getElementById("totalitems").innerText = Cart1.reduce(function (
-      acc,
-      ele
-    ) {
-      var totalpriceofcart = acc + ele.quant;
-      var praect = [{ key1: totalpriceofcart }];
-      // console.log(praect)
-      localStorage.setItem("pricecarry", JSON.stringify(praect));
-      return acc + ele.quant;
-    },
-    0);
+    document.getElementById("totalitems").innerText = Cart1.reduce(function(acc,ele) {
+
+      return acc + ele.quant ;
+    },0);
   });
 }
 
@@ -238,4 +236,16 @@ function reset() {
   document.getElementById("cart1").innerHTML = "";
   document.getElementById("total").innerText = 0;
   document.getElementById("totalitems").innerText = "0";
+  var praect = [{ key1: 0 }];
+  // console.log(praect)
+localStorage.setItem("pricecarry", JSON.stringify(praect));
 }
+function qwerty(){
+  if(document.getElementById("cart1").innerHTML == ""){
+    alert("Please add product to cart for checkout")
+  }
+  else{
+    window.location.href='checkout.html';
+  }
+}
+
