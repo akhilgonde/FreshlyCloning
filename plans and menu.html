@@ -41,20 +41,26 @@
     #navpar {
         width: 100%;
         /* background-color: rgb(255, 255, 255);  */
-        /* position: fixed; */
         /* top: 0px; */
         /* border: 1px solid red; */
         background-color: #fffdf7;
+        position: fixed;
+        top:0px;
     }
 
     #navbar {
         height: 50px;
         /* border: dashed black 1px; */
-        width: 75%;
+        width: 100%;
         margin: auto;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-bottom: 15px;
+        position: fixed;
+        background-color: #FFFDF7;
+        /* margin-top: -10px; */
+        /* padding-top: 30px; */
+        text-align: center;
     }
 
     #navbar>div {
@@ -64,6 +70,7 @@
         font-family: Favoritfreshly, sans-serif;
 
         font-weight: 700;
+        
     }
 
     #logofornav {
@@ -272,11 +279,22 @@
     #doller {
         color: #357471;
     }
+    #scroll
+    {
+        overflow:-moz-hidden-unscrollable;
+        margin-top: 50px;
+    }
+    #position
+    {
+        position: fixed;
+        background-color: #FFFDF7;
+    }
 </style>
 
 <body>
     <!-- navbar start -->
     <!-- type of website bar -->
+    
     <div id="navpar">
         <div id="type">
             <div id="consumersite"> <img id="consum" onclick="window.location.href='home.html'" 
@@ -306,8 +324,9 @@
             </div>
         </div>
     </div>
+    
     <!-- nav bar ends -->
-
+<div id="scroll">
     <div id="logo">
         <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/6192ce7669f68694a8b969af_Group%20(8).svg"
             alt="Freshly logo">
@@ -757,6 +776,7 @@
         </div>
 
     </div>
+</div>
 </body>
 <script src="data.js"></script>
 

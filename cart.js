@@ -269,5 +269,6 @@ else
 
 function reset()
 {
-    document.getElementById("cart1").innerHTML = ""; 
+    document.getElementById("cart1").innerHTML = "";    
+
 }
