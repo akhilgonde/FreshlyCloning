@@ -391,3 +391,13 @@ else
  }
 
 
+document.getElementById("date").addEventListener("click",function()
+{
+    date();
+});
+
+
+function date()
+{
+    window.location.href = "choose.html";
+}
