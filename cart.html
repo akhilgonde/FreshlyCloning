@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body
+    {
+        font-family: Favoritfreshly,sans-serif;
+    }
+
+img+h1,h4
+{
+    color: #357471;
+}
+p
+{
+  display: block;
+  height:100px;
+  text-align: center;
+  margin: auto;
+  font-weight: bold;
+  font-size: 15px;
+}
+ 
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+h3
+{
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+#menu
+{
+    box-sizing: border-box;
+    margin-top: 100px;  
+}
+#allmeals
+{   
+    display: flex;
+    margin: auto;
+    height: 23px;
+    width: 290px;
+    justify-content: center;
+    justify-items: center;
+    position: fixed;
+    left: 24%;
+}
+#allmeals>p,#allmeals>select
+{
+    display: block;
+    margin-right: 5px;
+}
+#allmeals>p
+{
+    color: #8C8C8C;
+}
+#list
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    margin: 10px;
+    margin-top: 50px;
+    gap :20px;
+    width: 75%;
+    height: 580px;
+    overflow:scroll;
+
+}
+#list>div
+{
+    height: auto;
+    /* border-radius: 20px;   */
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 15px;
+}
+#list>div>img
+{
+    height: 60%;
+    border-radius: 20px;
+    width: auto;
+    box-sizing: border-box;
+}
+#list>div>h3
+{
+    margin-bottom: 4px;
+    box-sizing: border-box;
+}
+#cartPage
+{
+    display: flex;
+    flex-direction: row;
+}
+#cart1
+{
+    width: 25%;
+    height: 300px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(1,0.30fr 0.50fr 0.20fr);
+    gap : -30px;
+    overflow:scroll;
+}
+#cart1> img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    border: 1px solid red;
+}
+#cart1>h6
+{
+text-align: center;
+ font-size: small;
+ font-size: x-small;
+ width: 90px;
+}
+h6+div
+{
+    display: flex;
+    flex-direction: row;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    gap : 10px;
+    margin-top: 15px;
+    justify-content: space-around;
+    margin-left: -10px;
+} 
+
+#akhil
+{
+  margin-top: -10px;
+  overflow: hidden;
+  position: absolute;
+  left:75%;
+  top :60%;
+  height:260px;
+  width: 338px;
+}
+#button
+{
+    display: block;
+    width: 200px;
+   margin: auto;
+   margin-top: 50px;
+   color: whitesmoke;
+   background-color: #2A6DFF;
+   
+}
+#flex
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#flex>img
+{
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+}
+img+div
+{
+    height: 20px;
+    width: 30px;
+    font-size: larger;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-align: center;
+    background-color: red;
+    color: aliceblue;
+    margin-top: 3px;
+}
+#akhil>div:nth-child(2)
+{
+    margin-top: 20px;
+}
+</style>
+<body>
+  
+   <div id="allmeals">
+       <p>Category:</p>
+       <select id="select" onchange="search()">
+           <option value="All Meals">All Meals</option>
+           <option value="Purely Plant">Purely Plant</option>
+           <option value="Signature Collection">Signature Collection</option>
+           <option value="FreshlyFit">FreshlyFit</option>
+           <option value="Proteins & Side">Proteins & Sides</option>
+       </select>
+   </div>
+<div id="cartPage">
+    <div id="list" onchange="search()">
+    </div>  
+    <div id= "cart1">
+</div>
+    <div id ="akhil">
+        <div id="flex">
+        <h3>Total Price:$ </h3>
+        <h3 id="total">123</h3>
+        </div >
+        <div id="flex">
+        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4uH2tpFQ0bari4HmHL03Sebk68-puA7K2qW1VvWJPni6WEye_" alt="">
+        <div id="totalitems"><h5>0</h5></div>  
+         </div>
+        <button id="button"><h2>NEXT</h2></button>
+    </div>
+   
+
+</div>
+
+</body>
+<script src="cart.js"></script>
+</html>
+
