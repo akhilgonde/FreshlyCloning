@@ -1,0 +1,551 @@
+body {
+    background-color: #ffffff;
+    font-family: Favoritfreshly, sans-serif;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.43em;
+    font-weight: 400;
+}
+
+/* nav bar start here */
+#type {
+  width: 240px;
+  height: 25px;
+  margin-top: 0%;
+  /* border: 1px dashed red; */
+  display: flex;
+  margin: auto;
+  margin-bottom: 10px;
+ 
+}
+
+#type > div {
+  /* border: 1px solid black; */
+  width: 120px;
+  height: 100%;
+  margin: auto;
+
+}
+#consum {
+  width: auto;
+  height:11px;
+  object-fit: cover;
+  margin-left: 15px;
+}
+#busi {
+  width: 80%;
+  height:10px;
+  object-fit: cover;
+}
+#navpar {
+  width: 100%;
+  /* background-color: rgb(255, 255, 255);  */
+  /* position: fixed; */
+  /* top: 0px; */
+  /* border: 1px solid red; */
+  background-color: #fffdf7;
+}
+#navbar {
+  height: 50px;
+  /* border: dashed black 1px; */
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+#navbar > div {
+  height: 45%;
+  /* border: 1px solid red; */
+  margin-top: 15px;
+  font-family: Favoritfreshly, sans-serif;
+
+  font-weight: 700;
+}
+#logofornav {
+  width: 100px;
+  height:20px;
+  margin-left: 10px;
+}
+#navitem {
+  display: flex;
+  width: auto;
+}
+#navitem > div {
+  /* border:1px solid green; */
+  margin: 0px 20px;
+  font-size: 14px;
+}
+#navitem > div:hover {
+  color: rgb(49, 103, 255);
+}
+#logsign {
+  height: 55%;
+  display: flex;
+  margin-top: 0px;
+  justify-content: center;
+}
+#logsign > div {
+  margin-right: 5px;
+}
+#logsign > button {
+  height: 30px;
+  background-color: rgb(49, 103, 255);
+  color: rgb(255, 255, 255);
+  margin: 0px 5px;
+  border: 0px;
+  height: auto;
+  width:80px;
+  font-size: 14px;
+}
+#logsign > button:hover {
+   transform: translate(2px,-2px) ;
+}
+
+#container {
+    height: 450px;
+    width: 100%;
+    display: flex;
+
+}
+
+button {
+    background-color: white;
+    color: #3167ff;
+    border: 1px solid #3167ff;
+    font-size: 18px;
+    height: 40px;
+    width: 130px;
+}
+button:hover{
+    transform: translate(2px,-2px) ;
+}
+
+#btn {
+    background-color: #3167ff;
+    color: white;
+    border: 1px solid white;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+#child1 {
+    height: 430px;
+    width: 40%;
+    padding: 40px;
+
+}
+
+#child2 {
+    height: 430px;
+    width: 60%;
+}
+
+img{
+    object-fit: cover;
+    height: 450px;
+    width: 100%;
+}
+
+#head1 {
+    font-family: Favoritfreshly, sans-serif;
+    margin-top: 70px;
+    line-height: 52px;
+    font-size: 48px;
+    color: #333;
+    font-weight: 700;
+}
+
+#head2 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: Favoritfreshly, sans-serif;
+    color: #333;
+}
+
+h2 {
+    padding-bottom: 0;
+    font-size: 38px;
+    line-height: 1.16em;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#process {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+
+}
+
+#unit1 {
+    height: 250px;
+    width: 400px;
+    text-align: center;
+
+    box-sizing: border-box;
+
+}
+
+#unit2 {
+    height: 250px;
+    width: 400px;
+    text-align: center;
+
+    box-sizing: border-box;
+    padding: 0px 10px;
+}
+
+#unit3 {
+    height: 250px;
+    width: 400px;
+    text-align: center;
+
+    box-sizing: border-box;
+    padding: 0px 10px;
+}
+
+#unit1>img {
+    height: 65%;
+    width: 50%;
+}
+
+#unit2>img {
+    height: 65%;
+    width: 50%;
+}
+
+#unit3>img {
+    height: 65%;
+    width: 50%;
+}
+
+#title {
+    font-size: 24px;
+}
+
+#title2 {
+    font-size: 24px;
+    padding: 0px 20px;
+}
+
+#title3 {
+    font-size: 24px;
+
+}
+
+p {
+    font-size: 14px;
+}
+
+#needs {
+    font-size: 38px;
+    margin-top: 150px;
+}
+
+#details {
+    text-align: center;
+    width: 34.2%;
+    margin: auto;
+}
+
+#problems {
+    display: flex;
+    height: 370px;
+    width: 100%;
+
+    margin-top: 50px;
+    gap: 80px;
+    justify-content: center;
+}
+
+#problems>div {
+    height: 370px;
+    width: 320px;
+
+    text-align: center;
+
+}
+
+#problems>div>img {
+    height: 60.8%;
+    width: 90%;
+    object-fit: cover;
+
+}
+
+#h3 {
+    font-size: 22px;
+}
+
+#imgcontainer {
+    height: 1000px;
+    width: 100%;
+
+    margin-top: 80px;
+}
+
+#imgcontainer>img {
+    height: 1000px;
+    width: 100%;
+    position: relative;
+
+}
+
+#innerContainer {
+    position: absolute;
+    top: 1840px;
+
+    height: 800px;
+    width: 70%;
+    margin-left: 250px;
+    background-color: #ffffff;
+
+
+}
+
+#quest {
+    font-size: 38px;
+    margin-top: 50px;
+}
+
+#questions {
+    height: 500px;
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    line-height: 40px;
+}
+
+hr {
+    border-bottom: 1px solid hsla(0, 0%, 78.8%, .75);
+}
+
+#choice {
+    font-size: 38px;
+    margin-top: 70px;
+}
+
+#para {
+    text-align: center;
+    margin-top: -18px;
+}
+
+#gridContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(2, 160px);
+    margin-top: 40px;
+    justify-content: center;
+    gap: 10px;
+    grid-template-areas:
+        "a b c d"
+        "e f g h";
+}
+
+#gridContainer>div {
+    height: 210px;
+    width: 160px;
+
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+#gridContainer>div>img {
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#menu-card-title {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 1px;
+}
+
+.a {
+    grid-area: a;
+}
+
+.b {
+    grid-area: b;
+}
+
+.c {
+    grid-area: c;
+}
+
+.d {
+    grid-area: d;
+
+}
+
+.e {
+    grid-area: e;
+    margin-top: 60px;
+}
+
+.f {
+    grid-area: f;
+    margin-top: 60px;
+}
+
+.g {
+    grid-area: g;
+    margin-top: 60px;
+}
+
+.h {
+    grid-area: h;
+    margin-top: 60px;
+}
+
+#push {
+    margin-top: 160px;
+    margin-left: 460px;
+    color: white;
+    background-color: #3167ff;
+    border: 1px solid #3167ff;
+    height: 50px;
+    width: 150px;
+}
+
+
+@media all and (min-width:400px) and (max-width:700px) {
+    #container {
+        height: 450px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "b"
+            "a";
+
+    }
+
+    #head1 {
+        margin-top: 0px;
+        text-align: center;
+        padding-right: 350px;
+
+    }
+
+    #head2 {
+        text-align: left;
+    }
+
+    #child1 {
+        height: 430px;
+        width: auto;
+        justify-content: center;
+
+        border: 1px solid white;
+    }
+
+    img {
+        object-fit: cover;
+        height: 450px;
+        width: auto;
+    }
+
+    .press {
+        justify-content: center;
+    }
+
+    button {
+        background-color: white;
+        color: #3167ff;
+        border: 1px solid #3167ff;
+        font-size: 18px;
+        height: 40px;
+        width: auto;
+        margin: auto;
+
+    }
+
+    #btn {
+        background-color: #3167ff;
+        color: white;
+        border: 1px solid white;
+        font-size: 18px;
+        width: auto;
+        margin: auto;
+    }
+
+    .a {
+        grid-area: a;
+
+    }
+
+    .b {
+        grid-area: b;
+    }
+
+    .h2 {
+        margin-top: 400px;
+        text-align: center;
+    }
+
+    #process {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "uni1"
+            "uni2"
+            "uni3";
+
+    }
+
+    .uni1 {
+        margin-top: 20px;
+        grid-area: uni1;
+        margin: auto;
+
+    }
+
+    .uni2 {
+        grid-area: uni2;
+        margin: auto;
+    }
+
+    .uni3 {
+        grid-area: uni3;
+        margin: auto;
+    }
+
+    #needs {
+        text-align: center;
+    }
+
+    #details {
+        text-align: center;
+        width: 80%;
+    }
+
+    #imgContainer {
+        /* margin-top: 5500px; */
+        height: 0px;
+    }
+
+    #imgContainer>img {
+        /* margin-top: 5500px; */
+        height: 0px;
+    }
+
+    #gridContainer {
+        /* margin-top: 1500px; */
+        margin: auto;
+        text-align: center;
+    }
+
+    #innerContainer {
+        margin-top: 1000px;
+
+    }
+
+}
