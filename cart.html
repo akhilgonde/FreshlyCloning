@@ -511,23 +511,35 @@ h6+div
 }
 #button
 {
-    display: block;
-    width: 200px;
+ 
+   width: 100px;
    margin: auto;
    margin-top: 20px;
    color: whitesmoke;
    background-color: #2A6DFF;
-   margin-bottom: 3px;  
+   margin-bottom: 3px;
+   height: 45px;  
+}
+#button :hover {
+  transform: translate(2px, -2px);
+  color: #fff;
 }
 
 #reset
 {
     display: block;
-    background-color:red;  
-    width: auto;
-    height: 50px;
+    background-color: #2A6DFF;
+    color: whitesmoke; 
+    width: 100px;
+    height: 45px;
     margin: auto;
+    text-align: center;
 }
+#reset :hover {
+  transform: translate(2px, -2px);
+  color: #fff;
+}
+
 h4
 {
     color: whitesmoke;
@@ -628,10 +640,10 @@ img+div
             </div>
             <button id="button" onclick="qwerty()" >
                 <!-- onclick="window.location.href='checkout.html'" -->
-                <h2>NEXT</h2>
+                <h4>NEXT</h4>
             </button>
             <button id="reset" onclick="reset()">
-                <h4>Reset Cart</h4>
+                <h3>Reset Cart</h3>
             </button>
         </div>
 

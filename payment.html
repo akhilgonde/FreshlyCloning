@@ -427,8 +427,8 @@
     <!-- <form action=""> -->
     <h5 id="pay">Payment Info</h5>
     <br>
-    <!-- <select id="selpeymntmthd">
-      <option value="">Select Payment Method</option>
+    <!-- <select id="selpeymntmthd" onchange="change()">
+      <option value="None">Select Payment Method</option>
       <option value="Credit Card">Credit Card</option>
       <option value="PayPal">PayPal</option>
     </select> -->
@@ -575,9 +575,20 @@
   document.querySelector("#cal").textContent = elem.total
  
   })
-var selval = document.querySelector("#selpeymntmthd").value;
-  if(selval=""){
-  }
-  
+
+
+  // function change()
+  // {
+  //  if(document.getElementById("selpeymntmthd").value == "Credit Card")
+  //  {
+
+  //  }
+  // }
+// var selval = document.querySelector("#selpeymntmthd").value;
+//   if(selval=""){
+//   }
+//  var method = document.getElementById("selpeymntmthd").value;
+
+//  console.log(document.getElementById("selpeymntmthd").value);
 
 </script>
