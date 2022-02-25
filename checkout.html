@@ -241,6 +241,7 @@
         var ecity = document.querySelector("#icity").value;
         var ephn = document.querySelector("#iphone").value;
         var eml = document.querySelector("#iemeil").value;
+        var ttcfd = document.querySelector("#total").textContent;
         if (fnm.length < 1 || lnm.length < 1 || funm.length < 1 || ad1.length < 1 || ad2.length < 1 || ssel.length < 1 || epin.length < 1 || ecity.length < 1 || ephn.length < 1 || eml.length < 1) {
             alert("all feild are cumpulsary")
         }
@@ -256,7 +257,8 @@
                 pin: epin,
                 city: ecity,
                 phonenum: ephn,
-                emeil: eml
+                emeil: eml,
+                total: ttcfd
             }
             arr.push(obj)
             // console.log(obj)
