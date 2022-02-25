@@ -121,9 +121,11 @@ p {
   top: 70%;
   left: 83%;
   font-size: 17px;
-  background-color: #ffffff00;
+  color: white;
+  /* background-color: rgb(49, 103, 255); */
 }
 #msc1 > h1 {
+  padding-top: 80px;
   font-weight: bolder;
   font-size: 65px;
   color: rgb(54, 54, 54);
@@ -160,16 +162,29 @@ p {
 }
 #inputs > div:nth-child(4) {
   grid-area: d;
+  height: 40px;
 }
 #inputs > div:nth-child(5) {
   grid-area: e;
+  height: 40px;
 }
 #inputs > div:nth-child(6) {
   grid-area: f;
+  height: 45px;
 }
+
 button {
   margin-left: 20px;
   height: 32px;
+  border: 0px;
+  background-color: rgb(49, 103, 255);
+  color: rgb(255, 255, 255);
+  /* border-radius: 3px; */
+}
+#btofexp {
+  margin-left: 20px;
+  height: 100%;
+  width: 120px;
   border: 0px;
   background-color: rgb(49, 103, 255);
   color: rgb(255, 255, 255);
@@ -286,13 +301,13 @@ button {
   height: 78%;
   margin-left: auto;
   margin-right: auto;
-  grid-template-columns: repeat(3, 213px);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 290px);
   gap: 16px;
   /* margin: auto; */
 }
 #parof6 > div > img {
-  width: 213px;
+  width: 100%;
   height: 190px;
   object-fit: cover;
   border-radius: 16px;
@@ -619,6 +634,7 @@ button:hover {
   height: 70%;
   width: 131%;
   padding: 10px;
+  padding-left: 50px;
   /* border:#357471 1px solid; */
   position: absolute;
   top: 15%;

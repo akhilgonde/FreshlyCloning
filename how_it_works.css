@@ -65,8 +65,7 @@ a:after{
 #nav_a {
   justify-content: center;
   margin: auto;
-  width: 500px;
-  margin-left: 235px;
+  width: 100%;
   display: flex;
 }
 #nav_a > div > a {
@@ -83,9 +82,8 @@ a:after{
 }
 
 #nav_log {
-  width: 150px;
+  width: 200px;
   margin-right: 30px;
-
   display: flex;
   align-items: center;
   justify-content: space-around;
