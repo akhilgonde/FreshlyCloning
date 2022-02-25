@@ -442,7 +442,7 @@ padding-bottom: 50px;;
   cursor: pointer;
   box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
   border: 1px solid rgba(0, 0, 0, .05);
-  transition: 120ms ease;
+  /* transition: 120ms ease; */
   transition: 200ms opacity ease;
   position: absolute;
   width:10%;
@@ -471,4 +471,9 @@ padding-bottom: 50px;;
   
 .button--appear {
   opacity: 1;
+}
+#button{
+  margin-bottom:50px;
+ 
+  
 }
