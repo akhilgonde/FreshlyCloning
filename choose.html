@@ -56,8 +56,9 @@
                         <b>Sunday</b>, Feb 27
                     </div>
 
-                    <div style="font-weight:bold; text-decoration:underline">
-                        Most Popular
+                    <div style="display:flex">
+                        <i class="fa-thin fa-star-sharp"></i>
+                        <p style="font-weight:bold; text-decoration:underline ;margin-top:-2px; font-size:14px">Most Popular</p>
                     </div>
                 </div>
 
@@ -248,4 +249,10 @@
     //     document.querySelector("#date").innerText="First Delivery Date:"+dat3.innerText;
     // })
 
+   if(document.querySelector("#date").innerText!=undefined)
+   {
+         var anchor=document.querySelector("a");
+         anchor.href="cart.html";
+
+   }
 </script>
