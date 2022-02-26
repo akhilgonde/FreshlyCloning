@@ -10,86 +10,104 @@ p {
 }
 
 /* nav bar start here */
-#type {
-  width: 240px;
-  height: 25px;
-  margin-top: 0%;
-  /* border: 1px dashed red; */
+#upper {
   display: flex;
-  margin: auto;
-  margin-bottom: 10px;
+  justify-content: center;
+  margin-top: -10px;
+  background:white;
+}
+#first_img {
+  width: 60px;
+  height: 40px;
+  margin-right: 20px;
+  text-decoration: underline;
 }
 
-#type > div {
-  /* border: 1px solid black; */
-  width: 120px;
-  height: 100%;
-  margin: auto;
+#second_img {
+  width: 80px;
+  opacity:60%;
+  filter:grayscale(1);
+  height: 40px;
 }
-#consum {
-  width: 52%;
-}
-#busi {
-  width: 90%;
-}
-#navpar {
-  width: 100%;
-  /* background-color: rgb(255, 255, 255);  */
-  /* position: fixed; */
-  /* top: 0px; */
-  /* border: 1px solid red; */
-  background-color: #fffdf7;
-}
+
 #navbar {
-  height: 50px;
-  /* border: dashed black 1px; */
-  width: 75%;
+  width:100%;
+  height: 72px;
+  background-color: rgb(255, 253, 247);
+  display: flex;
+  margin-top: -5px;
   margin: auto;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
+  align-items: center;
+  position: sticky;
 }
-#navbar > div {
-  height: 45%;
-  /* border: 1px solid red; */
-  margin-top: 15px;
-  font-family: Favoritfreshly, sans-serif;
+#nav_i {
+  width: 200px;
+ margin-bottom:0px;
+  margin-left: 30px;
 
-  font-weight: 700;
 }
-#logofornav {
-  width: 100px;
-  margin-left: 10px;
+#nav_img {
+  width: 107px;
+  height: 24px;
 }
-#navitem {
+#nav_a {
+  justify-content: center;
+  margin: auto;
+  width: 100%;
   display: flex;
-  width: auto;
 }
-#navitem > div {
-  /* border:1px solid green; */
-  margin: 0px 20px;
+#nav_a > div > a {
+  font-family: Favoritfreshly, sans-serif;
+  color: rgb(46, 50, 54);
+  margin-left: 30px;
   font-size: 14px;
+  line-height: 1.43em;
+ font-weight: 550;
+  text-decoration: none;
 }
-#navitem > div:hover {
+#nav_a > div > a:hover {
   color: rgb(49, 103, 255);
 }
-#logsign {
-  height: 55%;
+
+#nav_log {
+  width: 200px;
+  margin-right: 30px;
   display: flex;
-  margin-top: 0px;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
 }
-#logsign > div {
-  margin-right: 5px;
+#nav_log1 > a {
+  font-family: Favoritfreshly, sans-serif;
+  color: #303030;
+  font-size: 14px;
+  line-height: 1.43em;
+  font-weight: bold;
+  text-decoration: none;
 }
-#logsign > button {
-  height: 30px;
-  background-color: rgb(49, 103, 255);
-  color: rgb(255, 255, 255);
-  margin: 0px 5px;
-  border: 0px;
-  height: auto;
+#nav_log1 > a:hover {
+  color: rgb(49, 103, 255);
 }
+#nav_log2 > a>button {
+  background: rgb(49, 103, 255);
+  color: white;
+  width: 80.64px;
+  height: 33.28px;
+  font-size: 14px;
+  line-height: 1.43em;
+  border: 1px;
+  font-weight: bold;
+  font-family: Favoritfreshly, sans-serif;
+}
+
+#nav_log2 > a>button:hover {
+  transform: translate(2px, -2px); 
+}
+#navbar {
+  position: sticky;
+
+  
+}
+
 
 /* nav bar ends here */
 
