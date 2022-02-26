@@ -9,6 +9,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: -10px;
+  background:white;
 }
 #first_img {
   width: 60px;
@@ -19,6 +20,8 @@ body {
 
 #second_img {
   width: 80px;
+  opacity:60%;
+  filter:grayscale(1);
   height: 40px;
 }
 
@@ -35,7 +38,7 @@ body {
 #nav_i {
   width: 200px;
  margin-bottom:0px;
-  margin-left: 100px;
+  margin-left: 30px;
 
 }
 #nav_img {
@@ -50,11 +53,11 @@ body {
 }
 #nav_a > div > a {
   font-family: Favoritfreshly, sans-serif;
-  color: rgb(48,58,66);
+  color: rgb(46, 50, 54);
   margin-left: 30px;
   font-size: 14px;
   line-height: 1.43em;
-  font-weight: 550;
+ font-weight: 550;
   text-decoration: none;
 }
 #nav_a > div > a:hover {
@@ -63,7 +66,7 @@ body {
 
 #nav_log {
   width: 200px;
-  margin-right: 80px;
+  margin-right: 30px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -96,8 +99,10 @@ body {
 }
 #navbar {
   position: sticky;
-  top: -100px;
+  top:-10px;
+  
 }
+
 /* Navbar ends here */
 #main {
   width: 100%;
