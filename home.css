@@ -25,8 +25,8 @@ p {
 
 #second_img {
   width: 80px;
-  opacity:60%;
-  filter:grayscale(1);
+  /* opacity:60%; */
+  /* filter:grayscale(1); */
   height: 40px;
 }
 

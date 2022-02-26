@@ -39,7 +39,7 @@ body{
   #navbar {
     height: 50px;
     /* border: dashed black 1px; */
-    width: 75%;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
