@@ -134,13 +134,13 @@
             <div id="right">
                 <h2>Order Summary</h2>
                 <div>
-                    <div class="promot"><input placeholder="Promo Code" type="text">
-                        <input type="button" value="Apply">
+                    <div class="promot"><input placeholder="Promo Code" id="promot" type="text">
+                        <input type="button" value="Apply" onclick="promo()">
                     </div>
                     <div>
                         <p>Delivery Date</p>
                         <!-- <p id="deldat">--/---</p> -->
-                        <input type="date" name="" id="datesel">
+                        <input type="date" placeholder="dd/mm/yy" id="datesel" onChange="dateC()">
                     </div>
 
                     <div>
@@ -149,7 +149,7 @@
                     </div>
                     <div>
                         <p>Shipping Charges</p>
-                        <p> 90</p>
+                        <p>5</p>
                     </div>
                     <div>
                         <p>Total</p>
@@ -210,6 +210,7 @@
         document.querySelector("#ifullname").value = fname + " " + lname;
     }
 
+
     var prar = JSON.parse(localStorage.getItem("pricecarry")) || [0];
     console.log(prar)
     prar.map(function (elem) {
@@ -220,7 +221,7 @@
 
         // if(document.querySelector("#cartprice").textContent >1){
         // document.querySelector("#total").textContent = 0;
-        document.querySelector("#total").textContent = "$" + Math.ceil(elem.key1 + 90) || 0
+        document.querySelector("#total").textContent = "$" + Math.ceil(elem.key1 + 5) || 0
         // }
         // else {
         //     // document.querySelector("#total").textContent = "$"+Math.ceil(elem.key1)
@@ -234,6 +235,7 @@
     })
     var fnm = document.querySelector("#ifirstname").value;
     function validatechkout(event) {
+
         event.preventDefault();
         var fnm = document.querySelector("#ifirstname").value;
         var lnm = document.querySelector("#ilastname").value;
@@ -246,6 +248,7 @@
         var ephn = document.querySelector("#iphone").value;
         var eml = document.querySelector("#iemeil").value;
         var ttcfd = document.querySelector("#total").textContent;
+        
         if (fnm.length < 1 || lnm.length < 1 || funm.length < 1 || ad1.length < 1 || ad2.length < 1 || ssel.length < 1 || epin.length < 1 || ecity.length < 1 || ephn.length < 1 || eml.length < 1) {
             alert("all feild are cumpulsary")
         }
@@ -262,7 +265,8 @@
                 city: ecity,
                 phonenum: ephn,
                 emeil: eml,
-                total: ttcfd
+                total: ttcfd,
+                dDate : dDate
             }
             arr.push(obj)
             // console.log(obj)
@@ -271,5 +275,39 @@
             window.location.href = "payment.html";
         }
     }
+
+    function promo(event)
+    {
+
+        if(document.getElementById("promot").value =="freshly")
+        {
+            prar.map(function (elem) {
+
+        document.querySelector("#cartprice").textContent = "$" + Math.ceil(elem.key1);
+
+
+        // document.querySelector("#total").textContent = document.querySelector("#cartprice").textContent  || 0;
+
+        // if(document.querySelector("#cartprice").textContent >1){
+        // document.querySelector("#total").textContent = 0;
+        document.querySelector("#total").textContent = "$" + Math.ceil(0.70*(elem.key1 + 5)) || 0
+        // }
+        // else {
+        //     // document.querySelector("#total").textContent = "$"+Math.ceil(elem.key1)
+        //     document.querySelector("#total").textContent = 00;
+        // }
+        document.querySelector("#gettotal").textContent = document.querySelector("#total").textContent;
+        validatechkout(event);
+        // localStorage.setItem("chkdata", JSON.stringify(arr));
+    })
+        }
+    }
+  
+    function dateC()
+       {
+       var dDate = document.getElementById("datesel").value;
+       localStorage.setItem("dDate", JSON.stringify(dDate));
+       };
+    
 
 </script>

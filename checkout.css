@@ -322,8 +322,13 @@ input {
 }
 #datesel {
   border: 0px;
+  font-size: x-large;
+  justify-content: end;
 }
 
 #right > div > div:first-child {
   border-bottom: none;
 }
+
+
+
