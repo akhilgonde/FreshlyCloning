@@ -20,9 +20,7 @@ function formSubmit(event){
         alert("Login Failed");
     }
     else{
-        // alert("Login Successful");
-       document.querySelector("input[type='submit']").addEventListener("click",function(){
+          alert("Login Successful");
         window.location.href="index.html";
-       });
     }
 }

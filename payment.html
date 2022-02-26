@@ -340,6 +340,12 @@
       background-color: #1e4ed1;
 
     }
+    #deliveyD
+    {
+      margin-top: -5px;
+      margin-left: 48px;
+
+    }
   </style>
 </head>
 
@@ -364,7 +370,7 @@
       <div id="navitem">
         <div onclick="window.location.href='plans and menu.html'">Plans & Menu</div>
         <div onclick="window.location.href='how_it_works.html'">How it Works</div>
-        <div onclick="window.location.href='Gifts.html.html'">Gifts</div>
+        <div onclick="window.location.href='Gifts.html'">Gifts</div>
         <div>Refer a friend</div>
         <div onclick="window.location.href='help.html'">Help</div>
       </div>
@@ -394,6 +400,12 @@
         <p id="name2">Paul</p>
       </div>
     </div>
+
+    <!-- <p id="deliveyD"></p> -->
+
+    <h6 id="full">Delivery date</h6>
+    <p id="deliveyD">DD/MM/YY</p>
+
     <h6 id="full">Full Name For Delivery Address</h6>
     <p id="name3">Pratik Paul</p>
 
@@ -522,6 +534,8 @@
   }
   arr2 = JSON.parse(localStorage.getItem("chkdata"))
   arr2.map(function(elem){
+
+
   document.querySelector("#name1").textContent = elem.fname;
   document.querySelector("#name2").textContent = elem.lname;
   document.querySelector("#name3").textContent = elem.fulname
@@ -535,6 +549,14 @@
   document.querySelector("#cal").textContent = elem.total
  
   })
+
+  var dDate = JSON.parse(localStorage.getItem("dDate"));
+
+  console.log(dDate);
+
+  document.getElementById("deliveyD").textContent =  dDate;
+
+
 
 
   // function change()

@@ -11,6 +11,10 @@ body{
     margin: auto;
     margin-bottom: 10px;
   }
+  a{
+    color:#303030;
+    text-decoration: none;
+  }
   
   #type > div {
     /* border: 1px solid black; */
@@ -62,7 +66,7 @@ body{
     margin: 0px 20px;
     font-size: 14px;
   }
-  #navitem > div:hover {
+  #navitem > div >a:hover {
     color: rgb(49, 103, 255);
   }
   #logsign {
@@ -82,6 +86,9 @@ body{
     border: 0px;
     height: auto;
   }
+  button:hover{
+    transform: translate(2px,-2px);
+  }
   
   /* nav bar ends here */
 #container{
@@ -92,6 +99,7 @@ body{
   
     font-family: FavoritFreshly,Helvetica Neue,Helvetica,Arial,sans-serif;
     background-color: #fffdf7;
+   
 }
 h1{
     font-size: 41px;
@@ -133,48 +141,64 @@ p{
 #a{
     margin-top: 20px;
 }
-a{
+#a{
     color:rgb(0, 110, 255);
     font-size: 14px;
 }
 ::placeholder{
   font-size: 14px;
 }
-/* footer start */
-#footer div {
-  width: 85%;
-  /* border: 1px solid black; */
-  margin-left: 14%;
-}
-#footer div div {
-  width: 15%;
-  float: left;
-  /* border: 1px solid red; */
-  margin-left: 5%;
-  margin-top: 60px;
-  
-}
-#footer div div p {
-  font-size: 16px;
-  font-family: sans-serif;
-}
-#footer div div a {
-  color: #535369;
-  text-decoration: none;
-  font-size: 14px;
-  font-family: sans-serif;
-}
-.ok{
-/* filter:Grayscale(1);
--webkit-filter:Grayscale(1);
-color: grey; */
-opacity:.65;
-}
 
-#footer div div a img {
-  margin-right: 6%;
-  /* filter:Grayscale(1)  ;
-  -webkit-filter:Grayscale(1)  ; */
+/* footer start */
+hr{
+  color: #e4e4ee;
 }
+#footer{
+  margin-top: -30px;
+
+} 
+    #footer div {
+      width: 85%;
+      /* border: 1px solid black; */
+      margin-left: 14%;
+    }
+    #footer div div {
+      width: 15%;
+      float: left;
+      /* border: 1px solid red; */
+      margin-left: 5%;
+      margin-top: 60px;
+      
+    }
+    #footer div div p {
+      font-size: 16px;
+      font-family: sans-serif;
+    }
+    #footer div div a {
+      color: #535369;
+      text-decoration: none;
+      font-size: 14px;
+      font-family: sans-serif;
+    }
+    .ok{
+    /* filter:Grayscale(1);
+    -webkit-filter:Grayscale(1);
+    color: grey; */
+    opacity:.65;
+    }
+
+    #footer div div a img {
+      margin-right: 6%;
+      /* filter:Grayscale(1)  ;
+      -webkit-filter:Grayscale(1)  ; */
+    }
+    #img{
+      margin-top: 20px;
+      height:30px;
+    }
+    #p{
+      margin-top: 0px;
+      color: #535369;
+    }
 
 /* Footer end */
