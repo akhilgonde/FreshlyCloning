@@ -248,9 +248,10 @@
         var ephn = document.querySelector("#iphone").value;
         var eml = document.querySelector("#iemeil").value;
         var ttcfd = document.querySelector("#total").textContent;
+        var dDate = document.querySelector("#datesel").textContent
         
         if (fnm.length < 1 || lnm.length < 1 || funm.length < 1 || ad1.length < 1 || ad2.length < 1 || ssel.length < 1 || epin.length < 1 || ecity.length < 1 || ephn.length < 1 || eml.length < 1) {
-            alert("all feild are cumpulsary")
+            alert("All feild are cumpulsary")
         }
         else {
             arr = [];
@@ -279,7 +280,7 @@
     function promo(event)
     {
 
-        if(document.getElementById("promot").value =="freshly")
+        if(document.getElementById("promot").value =="freshly30")
         {
             prar.map(function (elem) {
 
