@@ -111,6 +111,7 @@ p {
 }
 
 
+
 /* nav bar ends here */
 
 #main1 {
@@ -376,9 +377,17 @@ button {
   background-color: #fffdf7;
 }
 #frshlogo > p {
-  margin: 0px 600px;
+     margin: 0px 600px;
   margin-bottom: 70px;
-  font-size: 14px;
+  display: block;
+        width: 796px;
+        height: 100px;
+        text-align: center;
+        margin: auto;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 700;
 }
 #priceach {
   color: rgb(61, 145, 115);
