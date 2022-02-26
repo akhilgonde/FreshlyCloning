@@ -24,10 +24,13 @@ body{
     margin: auto;
   }
   #consum {
-    width: 52%;
+    width: auto;
+    height: 15px;
+    /* border: 1px solid red; */
   }
   #busi {
-    width: 90%;
+    width: auto;
+    height: 15px;
   }
   #navpar {
     width: 100%;
@@ -40,7 +43,7 @@ body{
   #navbar {
     height: 50px;
     /* border: dashed black 1px; */
-    width: 75%;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
