@@ -27,7 +27,9 @@ body{
   }
   #busi {
     width: 90%;
-  }
+    filter:grayscale(1)  ;
+    -webkit-filter:grayscale(1)  ;
+}
   #navpar {
     width: 100%;
     /* background-color: rgb(255, 255, 255);  */

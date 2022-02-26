@@ -49,6 +49,8 @@ a{
   width: 80%;
   height:10px;
   object-fit: cover;
+  filter:grayscale(1);
+  -webkit-filter:grayscale(1);
 }
 #navbar {
   height: 60px;

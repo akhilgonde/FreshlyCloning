@@ -30,18 +30,24 @@ a:after{
   justify-content: center;
   margin-top: -10px;
 }
+#new{
+  border-bottom: 2px solid rgb(29, 77, 62);
+  padding-left: 15px;
+}
 #first_img {
-  width: 60px;
-  height: 40px;
+  width: 45px;
+  /* height: 20px; */
   margin-right: 20px;
+  margin-top: 20px;
   text-decoration: underline;
 }
 
 #second_img {
   width: 80px;
-  /* opacity:60%;
-  filter:grayscale(1); */
-  height: 40px;
+  /* opacity:60%; */
+  filter:grayscale(1);
+  height: 30px;
+  margin-top: 10px;
 }
 
 #navbar {

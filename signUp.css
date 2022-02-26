@@ -26,11 +26,14 @@ body{
   #consum {
     width: auto;
     height: 15px;
-    /* border: 1px solid red; */
-  }
+    
+    /*border: 1px solid red;
+    */
+}
   #busi {
     width: auto;
     height: 15px;
+    filter:grayscale(1);
   }
   #navpar {
     width: 100%;

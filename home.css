@@ -15,19 +15,26 @@ p {
   justify-content: center;
   margin-top: -10px;
   background:white;
+ 
+}
+#new{
+  border-bottom: 2px solid rgb(29, 77, 62);
+  padding-left: 15px;
 }
 #first_img {
-  width: 60px;
-  height: 40px;
+  width: 45px;
+  height: 18px;
   margin-right: 20px;
+  margin-top: 10px;
   text-decoration: underline;
 }
 
 #second_img {
   width: 80px;
   /* opacity:60%; */
-  /* filter:grayscale(1); */
-  height: 40px;
+  filter:grayscale(1);
+  height: 30px;
+  margin-top: 4px;
 }
 
 #navbar {
@@ -696,6 +703,14 @@ button:hover {
   font-size: 10px;
   font-family: Favoritfreshly, sans-serif;
   color: #272727;
+}
+#second_img{
+  filter:Grayscale(1);
+  -webkit-filter:Grayscale(1);
+}
+#second_img:hover{
+  filter:Greyscale(0);
+ 
 }
 #belivepar1 {
   width: 100%;
