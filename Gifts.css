@@ -63,6 +63,7 @@ a{
 #navbar {
     position: sticky;
     top:-10px;
+    z-index: 1
     
   }
 #navbar > div {
@@ -297,7 +298,6 @@ p {
 #imgcontainer {
     height: 1000px;
     width: 100%;
-
     margin-top: 80px;
 }
 
@@ -311,11 +311,11 @@ p {
 #innerContainer {
     position: absolute;
     top: 1840px;
-
     height: 800px;
     width: 65%;
     margin-left: 265px;
     background-color: #ffffff;
+    overflow: hidden;
 
 
 }
