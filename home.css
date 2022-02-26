@@ -39,6 +39,7 @@ p {
   margin: auto;
   align-items: center;
   position: sticky;
+  top:-10px;
 }
 #nav_i {
   width: 200px;
@@ -104,6 +105,7 @@ p {
 }
 #navbar {
   position: sticky;
+  top:-10px;
 
   
 }
