@@ -1,3 +1,7 @@
+
+  
+
+
 body {
   background-color: #fffdf7;
 }
@@ -113,17 +117,17 @@ p {
   margin: auto;
   margin-top: 130px;
 }
-#lmoraction {
+/* #lmoraction { */
   /* border: 1px solid red; */
-  height: 34px;
-  width: 109px;
-  position: relative;
-  top: 70%;
-  left: 83%;
-  font-size: 17px;
-  color: white;
+  /* height: 34px; */
+  /* width: 109px; */
+  /* position: relative; */
+  /* top: 70%; */
+  /* left: 83%; */
+  /* font-size: 17px; */
+  /* color: white; */
   /* background-color: rgb(49, 103, 255); */
-}
+/* } */
 #msc1 > h1 {
   padding-top: 80px;
   font-weight: bolder;

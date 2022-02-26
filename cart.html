@@ -5,108 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cart</title>
 </head>
 <style>
     body {
         font-family: Favoritfreshly, sans-serif;
     }
 
-    /* nav bar start here */
-    #type {
-        width: 240px;
-        height: 25px;
-        margin-top: 0%;
-        /* border: 1px dashed red; */
-        display: flex;
-        margin: auto;
-        margin-bottom: 10px;
-    }
 
-    #type>div {
-        /* border: 1px solid black; */
-        width: 120px;
-        height: 100%;
-        margin: auto;
-    }
-
-    #consum {
-        width: 52%;
-    }
-
-    #busi {
-        width: 90%;
-    }
-
-    #navpar {
-        width: 100%;
-        /* background-color: rgb(255, 255, 255);  */
-        position: fixed;
-        /* top: 0px; */
-        /* border: 1px solid red; */
-        background-color: #fffdf7;
-    }
-
-    #navbar {
-        height: 50px;
-        /* border: dashed black 1px; */
-        width: 75%;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 15px;
-    }
-
-    #navbar>div {
-        height: 45%;
-        /* border: 1px solid red; */
-        margin-top: 15px;
-        font-family: Favoritfreshly, sans-serif;
-
-        font-weight: 700;
-    }
-
-    #logofornav {
-        width: 100px;
-        margin-left: 10px;
-    }
-
-    #navitem {
-        display: flex;
-        width: auto;
-    }
-
-    #navitem>div {
-        /* border:1px solid green; */
-        margin: 0px 20px;
-        font-size: 14px;
-    }
-
-    #navitem>div:hover {
-        color: rgb(49, 103, 255);
-    }
-
-    #logsign {
-        height: 55%;
-        display: flex;
-        margin-top: 0px;
-        justify-content: center;
-    }
-
-    #logsign>div {
-        margin-right: 5px;
-    }
-
-    #logsign>button {
-        height: 30px;
-        background-color: rgb(49, 103, 255);
-        color: rgb(255, 255, 255);
-        margin: 0px 5px;
-        border: 0px;
-        height: auto;
-    }
-
-    /* nav bar ends here */
 
     img+h1,
     h4 {
@@ -167,7 +73,7 @@
         gap: 20px;
         width: 75%;
         height: 550px;
-        overflow: scroll;   
+        overflow: scroll;
 
     }
 
@@ -212,7 +118,7 @@
         width: auto;
         height: auto;
         border: 1px solid;
-        margin-top:2px;
+        margin-top: 2px;
     }
 
     #cart1>h6 {
@@ -293,377 +199,396 @@
     #akhil>div:nth-child(2) {
         margin-top: 20px;
     }
+
     /* -------------------------------------------------------------------------------------------------------------------- */
-  #upper {
-  display: flex;
-  justify-content: center;
-  margin-top: -10px;
-}
-#first_img {
-  width: 60px;
-  height: 40px;
-  margin-right: 20px;
-  text-decoration: underline;
-}
+    #upper {
+        display: flex;
+        justify-content: center;
+        margin-top: -10px;
+    }
 
-#second_img {
-  width: 80px;
-  height: 40px;
-}
+    #first_img {
+        width: 60px;
+        height: 40px;
+        margin-right: 20px;
+        text-decoration: underline;
+    }
 
-#navbar {
-  width:100%;
-  height: 56px;
-  background-color: rgb(255, 253, 247);
-  display: flex;
-  margin-top: -5px;
-  margin: auto;
-  align-items: center;
-  position: sticky;
-}
-#nav_i {
-  width: 200px;
- margin-bottom:0px;
-  margin-left: 30px;
+    #second_img {
+        width: 80px;
+        height: 40px;
+    }
 
-}
-#nav_img {
-  width: 107px;
-  height: 24px;
-}
-#nav_a {
-  justify-content: center;
-  margin: auto;
-  width: 100%;
-  display: flex;
-}
-#nav_a > div > a {
-  font-family: Favoritfreshly, sans-serif;
-  color: rgb(48,58,66);
-  margin-left: 30px;
-  font-size: 14px;
-  line-height: 1.43em;
-  font-weight: 550;
-  text-decoration: none;
-}
-#nav_a > div > a:hover {
-  color: rgb(49, 103, 255);
-}
+    #navbar {
+        width: 100%;
+        height: 56px;
+        background-color: rgb(255, 253, 247);
+        display: flex;
+        margin-top: -5px;
+        margin: auto;
+        align-items: center;
+        position: sticky;
+    }
 
-#nav_log {
-  width: 200px;
-  margin-right: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-#nav_log1 > a {
-  font-family: Favoritfreshly, sans-serif;
-  color: #303030;
-  font-size: 14px;
-  line-height: 1.43em;
-  font-weight: bold;
-  text-decoration: none;
-}
-#nav_log1 > a:hover {
-  color: rgb(49, 103, 255);
-}
-#nav_log2 > a>button {
-  background: rgb(49, 103, 255);
-  color: white;
-  width: 80.64px;
-  height: 33.28px;
-  font-size: 14px;
-  line-height: 1.43em;
-  border: 1px;
-  font-weight: bold;
-  font-family: Favoritfreshly, sans-serif;
-}
+    #nav_i {
+        width: 200px;
+        margin-bottom: 0px;
+        margin-left: 30px;
 
-#nav_log2 > a>button:hover {
-  transform: translate(2px, -2px); 
-}
-/* nav bar ends here */
-/* ---------------------------------------------------------------------------------------------------------------------------------------- */
-img+h1,h4
-{
-    color: #357471;
-}
-p
-{
-  display: block;
-  height:100px;
-  text-align: center;
-  margin: auto;
-  font-weight: bold;
-  font-size: 15px;
-}
- 
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
-h3
-{
-    display: block;
-    box-sizing: border-box;
-    margin-bottom: 5px;
-}
-#menu
-{
-    box-sizing: border-box;
-    margin-top: 100px;  
-}
-#allmeals
-{   
-    display: flex;
-    margin: auto;
-    height: 23px;
-    width: 290px;
-    justify-content: center;
-    justify-items: center;
-    position: fixed;
-    margin-top: 110px;
-    margin-bottom: 150px;
-}
-#allmeals>p,#allmeals>select
-{
-    display: block;
-    margin-right: 5px;
-}
-#allmeals>p
-{
-    color: #8C8C8C;
-}
-#list
-{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    margin: 10px;
-    margin-top: 150px;
-    gap :20px;
-    width: 75%;
-    height: 470px;
-    overflow:scroll;
-    
-}
-#list>div
-{
-    height: auto;
-    /* border-radius: 20px;   */
-    box-sizing: border-box;
-    width: 100%;
-    margin-bottom: 15px;
-}
-#list>div>img
-{
-    height: 60%;
-    border-radius: 20px;
-    width: auto;
-    box-sizing: border-box;
-}
-#list>div>h3
-{
-    margin-bottom: 4px;
-    box-sizing: border-box;
-}
-#cartPage
-{
-    display: flex;
-    flex-direction: row;
-}
-#cart1
-{
-    width: 25%;
-    height: 200px;
-    margin-top: 150px;
-    display: grid;
-    grid-template-columns: repeat(1,0.30fr 0.50fr 0.20fr);
-    gap : -30px;
-    overflow:scroll;
-}
-#cart1> img {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-    
-}
-#cart1>h6
-{
-text-align: center;
- font-size: small;
- font-size: x-small;
- width: 90px;
-}
-h6+div
-{
-    display: flex;
-    flex-direction: row;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    gap : 10px;
-    margin-top: 15px;
-    justify-content: space-around;
-    margin-left: -10px;
-} 
+    }
 
-#akhil
-{
-  margin-top: -25px;
-  overflow: hidden;
-  position: absolute;
-  left:75%;
-  top :60%;
-  height:265px;
-  width: 338px;
-}
-#button
-{
- 
-   width: 100px;
-   margin: auto;
-   margin-top: 20px;
-   color: whitesmoke;
-   background-color: #2A6DFF;
-   margin-bottom: 3px;  
-   border:none;
+    #nav_img {
+        width: 107px;
+        height: 24px;
+    }
 
-}
+    #nav_a {
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+        display: flex;
+    }
 
-#reset
-{
-    display: block;
-    background-color:red;  
-    width: auto;
-    border:none;
-    height: 50px;
-    margin: auto;
-    text-align: center;
-}
-#reset :hover {
-  transform: translate(2px, -2px);
-  color: #fff;
-}
+    #nav_a>div>a {
+        font-family: Favoritfreshly, sans-serif;
+        color: rgb(48, 58, 66);
+        margin-left: 30px;
+        font-size: 14px;
+        line-height: 1.43em;
+        font-weight: 550;
+        text-decoration: none;
+    }
 
-h4
-{
-    color: whitesmoke;
-}
-#flex
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: auto;
-}
-#flex>img
-{
-    width: 40px;
-    height: 40px;
-    margin-top: 20px;
-}
-img+div
-{
-    height: 20px;
-    width: 30px;
-    font-size: larger;
-    border-radius: 50%;
-    border: 1px solid black;
-    text-align: center;
-    background-color: red;
-    color: aliceblue;
-    margin-top: 3px;
-}
-#akhil>div:nth-child(2)
-{
-    margin-top: 20px;
-}
-#all{
-    margin-top:-50px;
-}
+    #nav_a>div>a:hover {
+        color: rgb(49, 103, 255);
+    }
+
+    #nav_log {
+        width: 200px;
+        margin-right: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #nav_log1>a {
+        font-family: Favoritfreshly, sans-serif;
+        color: #303030;
+        font-size: 14px;
+        line-height: 1.43em;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    #nav_log1>a:hover {
+        color: rgb(49, 103, 255);
+    }
+
+    #nav_log2>a>button {
+        background: rgb(49, 103, 255);
+        color: white;
+        width: 80.64px;
+        height: 33.28px;
+        font-size: 14px;
+        line-height: 1.43em;
+        border: 1px;
+        font-weight: bold;
+        font-family: Favoritfreshly, sans-serif;
+    }
+
+    #nav_log2>a>button:hover {
+        transform: translate(2px, -2px);
+    }
+
+    /* nav bar ends here */
+    /* ---------------------------------------------------------------------------------------------------------------------------------------- */
+    img+h1,
+    h4 {
+        color: #357471;
+    }
+
+    p {
+        display: block;
+        height: 100px;
+        text-align: center;
+        margin: auto;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    h3 {
+        display: block;
+        box-sizing: border-box;
+        margin-bottom: 5px;
+    }
+
+    #menu {
+        box-sizing: border-box;
+        margin-top: 100px;
+    }
+
+    #allmeals {
+        display: flex;
+        margin: auto;
+        height: 23px;
+        width: 290px;
+        justify-content: center;
+        justify-items: center;
+        position: fixed;
+        margin-top: 110px;
+        margin-bottom: 150px;
+    }
+
+    #allmeals>p,
+    #allmeals>select {
+        display: block;
+        margin-right: 5px;
+    }
+
+    #allmeals>p {
+        color: #8C8C8C;
+    }
+
+    #list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 10px;
+        margin-top: 150px;
+        gap: 20px;
+        width: 75%;
+        height: 470px;
+        overflow: scroll;
+
+    }
+
+    #list>div {
+        height: auto;
+        /* border-radius: 20px;   */
+        box-sizing: border-box;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    #list>div>img {
+        height: 60%;
+        border-radius: 20px;
+        width: auto;
+        box-sizing: border-box;
+    }
+
+    #list>div>h3 {
+        margin-bottom: 4px;
+        box-sizing: border-box;
+    }
+
+    #cartPage {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #cart1 {
+        width: 25%;
+        height: 200px;
+        margin-top: 150px;
+        display: grid;
+        grid-template-columns: repeat(1, 0.30fr 0.50fr 0.20fr);
+        gap: -30px;
+        overflow: scroll;
+    }
+
+    #cart1>img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+
+    }
+
+    #cart1>h6 {
+        text-align: center;
+        font-size: small;
+        font-size: x-small;
+        width: 90px;
+    }
+
+    h6+div {
+        display: flex;
+        flex-direction: row;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        gap: 10px;
+        margin-top: 15px;
+        justify-content: space-around;
+        margin-left: -10px;
+    }
+
+    #akhil {
+        margin-top: -25px;
+        overflow: hidden;
+        position: absolute;
+        left: 75%;
+        top: 60%;
+        height: 265px;
+        width: 338px;
+    }
+
+    #button {
+
+        width: 100px;
+        margin: auto;
+        margin-top: 20px;
+        color: whitesmoke;
+        background-color: #2A6DFF;
+        margin-bottom: 3px;
+        border: none;
+
+    }
+
+    #button:hover {
+        transform: translate(2px, -2px);
+        color: #fff;
+    }
+
+    #reset {
+        display: block;
+        background-color: red;
+        width: auto;
+        border: none;
+        height: 50px;
+        margin: auto;
+        text-align: center;
+    }
+
+    #reset :hover {
+        transform: translate(2px, -2px);
+        color: #fff;
+    }
+
+    h4 {
+        color: whitesmoke;
+    }
+
+    #flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+    }
+
+    #flex>img {
+        width: 40px;
+        height: 40px;
+        margin-top: 20px;
+    }
+
+    img+div {
+        height: 20px;
+        width: 30px;
+        font-size: larger;
+        border-radius: 50%;
+        border: 1px solid black;
+        text-align: center;
+        background-color: red;
+        color: aliceblue;
+        margin-top: 3px;
+    }
+
+    #akhil>div:nth-child(2) {
+        margin-top: 20px;
+    }
+
+    #all {
+        margin-top: -50px;
+    }
 </style>
 
 <body>
 
     <!-- navbar start -->
     <div id="upper">
+            
         <a href="home.html"><img id="first_img"
-            src="https://assets-global.website-files.com/5d03 b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg" /></a>
-        <a ><img id="second_img" style="margin-left: 20px"
-            src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f7b2e54745410836cfa3955_bizlogo_main-07.svg" /></a>
-      </div> 
-    
-      <!-- ---------------------------------------------- -->
-    
-      <div id="navbar">
+                src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg" /></a>
+
+            <a><img id="second_img" style="margin-left: 20px"
+                    src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f7b2e54745410836cfa3955_bizlogo_main-07.svg" /></a>
+    </div>
+
+    <!-- ---------------------------------------------- -->
+
+    <div id="navbar">
         <div id="nav_i">
-          <a href="home.html"><img id="nav_img"
-              src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg" /></a>
+            <a href="index.html"><img id="nav_img"
+                    src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg" /></a>
         </div>
         <div id="nav_a">
-          <div>
-            <a href="plans and menu.html">Plans & Menu</a>
-          </div>
-          <div>
-            <a href="how_it_works.html">How it Works</a>
-          </div>
-          <div><a href="https://www.fres">Gifts</a></div>
-          <div>
-            <a href="">Refer a Friend</a>
-          </div>
-          <div><a href="help.html">Help</a></div>
+            <div>
+                <a href="plans and menu.html">Plans & Menu</a>
+            </div>
+            <div>
+                <a href="how_it_works.html">How it Works</a>
+            </div>
+            <div><a href="https://www.fres">Gifts</a></div>
+            <div>
+                <a href="">Refer a Friend</a>
+            </div>
+            <div><a href="help.html">Help</a></div>
         </div>
         <div id="nav_log">
-          <div id="nav_log1">
-            <a href="login.html">Login</a>
-          </div>
-          <div id="nav_log2"><a href="signUp.html"><button>Sign Up</button></a></div>
+            <div id="nav_log1">
+                <a href="login.html">Login</a>
+            </div>
+            <div id="nav_log2"><a href="signUp.html"><button>Sign Up</button></a></div>
         </div>
-      </div>
+    </div>
     <!-- nav bar ends -->
 
-<div id="all">
-    <div id="allmeals">
-        <p>Category:</p>
-        <select id="select" onchange="search()">
-            <option value="All Meals">All Meals</option>
-            <option value="Purely Plant">Purely Plant</option>
-            <option value="Signature Collection">Signature Collection</option>
-            <option value="FreshlyFit">FreshlyFit</option>
-            <option value="Proteins & Side">Proteins & Sides</option>
-        </select>
-    </div>
-    <div id="cartPage">
-        <div id="list" onchange="search()">
+    <div id="all">
+        <div id="allmeals">
+            <p>Category:</p>
+            <select id="select" onchange="search()">
+                <option value="All Meals">All Meals</option>
+                <option value="Purely Plant">Purely Plant</option>
+                <option value="Signature Collection">Signature Collection</option>
+                <option value="FreshlyFit">FreshlyFit</option>
+                <option value="Proteins & Side">Proteins & Sides</option>
+            </select>
         </div>
-        <div id="cart1">
-        </div>
-        <div id="akhil">
-            <div id="flex">
-                <h3>Cart Total Price:$ </h3>
-                <h3 id="total">0</h3>
+        <div id="cartPage">
+            <div id="list" onchange="search()">
             </div>
-            <div id="flex">
-                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4uH2tpFQ0bari4HmHL03Sebk68-puA7K2qW1VvWJPni6WEye_"
-                    alt="">
-                <div id="totalitems">
-                    <h5>0</h5>
+            <div id="cart1">
+            </div>
+            <div id="akhil">
+                <div id="flex">
+                    <h3>Cart Total Price:$ </h3>
+                    <h3 id="total">0</h3>
                 </div>
+                <div id="flex">
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4uH2tpFQ0bari4HmHL03Sebk68-puA7K2qW1VvWJPni6WEye_"
+                        alt="">
+                    <div id="totalitems">
+                        <h5>0</h5>
+                    </div>
+                </div>
+                <button id="button" onclick="qwerty()">
+                    <!-- onclick="window.location.href='checkout.html'" -->
+                    <h4>NEXT</h4>
+                </button>
+                <button id="reset" onclick="reset()">
+                    <h3>Reset Cart</h3>
+                </button>
             </div>
-            <button id="button" onclick="qwerty()" >
-                <!-- onclick="window.location.href='checkout.html'" -->
-                <h4>NEXT</h4>
-            </button>
-            <button id="reset" onclick="reset()">
-                <h3>Reset Cart</h3>
-            </button>
+
+
         </div>
-
-
     </div>
-</div>
 
 </body>
 <script src="cart.js"></script>
