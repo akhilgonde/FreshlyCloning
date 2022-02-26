@@ -521,14 +521,15 @@ h6+div
 }
 #button
 {
-    display: block;
-    width: 200px;
+ 
+   width: 100px;
    margin: auto;
    margin-top: 20px;
    color: whitesmoke;
    background-color: #2A6DFF;
    margin-bottom: 3px;  
    border:none;
+
 }
 
 #reset
@@ -537,10 +538,15 @@ h6+div
     background-color:red;  
     width: auto;
     border:none;
-    
     height: 50px;
     margin: auto;
+    text-align: center;
 }
+#reset :hover {
+  transform: translate(2px, -2px);
+  color: #fff;
+}
+
 h4
 {
     color: whitesmoke;
@@ -584,7 +590,7 @@ img+div
     <!-- navbar start -->
     <div id="upper">
         <a href="home.html"><img id="first_img"
-            src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg" /></a>
+            src="https://assets-global.website-files.com/5d03 b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg" /></a>
         <a ><img id="second_img" style="margin-left: 20px"
             src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f7b2e54745410836cfa3955_bizlogo_main-07.svg" /></a>
       </div> 
@@ -646,11 +652,12 @@ img+div
                     <h5>0</h5>
                 </div>
             </div>
-            <button id="button" onclick="window.location.href='checkout.html'" >
-                <h2>NEXT</h2>
+            <button id="button" onclick="qwerty()" >
+                <!-- onclick="window.location.href='checkout.html'" -->
+                <h4>NEXT</h4>
             </button>
             <button id="reset" onclick="reset()">
-                <h4>Reset Cart</h4>
+                <h3>Reset Cart</h3>
             </button>
         </div>
 
