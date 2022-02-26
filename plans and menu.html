@@ -13,107 +13,103 @@
     }
 
     /* nav bar start here */
-    #type {
-        width: 240px;
-        height: 25px;
-        margin-top: 0%;
-        /* border: 1px dashed red; */
-        display: flex;
-        margin: auto;
-        margin-bottom: 10px;
-    }
+    #upper {
+  display: flex;
+  justify-content: center;
+  margin-top: -10px;
+}
+#first_img {
+  width: 60px;
+  height: 40px;
+  margin-right: 20px;
+  text-decoration: underline;
+}
 
-    #type>div {
-        /* border: 1px solid black; */
-        width: 120px;
-        height: 100%;
-        margin: auto;
-    }
+#second_img {
+  width: 80px;
+  opacity:60%;
+  filter:grayscale(1);
+  height: 40px;
+}
 
-    #consum {
-        width: 52%;
-    }
+#navbar {
+  width:100%;
+  height: 72px;
+  background-color: rgb(255, 253, 247);
+  display: flex;
+  margin-top: -5px;
+  margin: auto;
+  align-items: center;
+  position: sticky;
+}
+#nav_i {
+  width: 200px;
+ margin-bottom:0px;
+  margin-left: 30px;
 
-    #busi {
-        width: 90%;
-    }
+}
+#nav_img {
+  width: 107px;
+  height: 24px;
+}
+#nav_a {
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  display: flex;
+}
+#nav_a > div > a {
+  font-family: Favoritfreshly, sans-serif;
+  color: rgb(46, 50, 54);
+  margin-left: 30px;
+  font-size: 14px;
+  line-height: 1.43em;
+ font-weight: 550;
+  text-decoration: none;
+}
+#nav_a > div > a:hover {
+  color: rgb(49, 103, 255);
+}
 
-    #navpar {
-        width: 100%;
-        /* background-color: rgb(255, 255, 255);  */
-        /* top: 0px; */
-        /* border: 1px solid red; */
-        background-color: #fffdf7;
-        position: fixed;
-        top:0px;
-    }
+#nav_log {
+  width: 200px;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#nav_log1 > a {
+  font-family: Favoritfreshly, sans-serif;
+  color: #303030;
+  font-size: 14px;
+  line-height: 1.43em;
+  font-weight: bold;
+  text-decoration: none;
+}
+#nav_log1 > a:hover {
+  color: rgb(49, 103, 255);
+}
+#nav_log2 > a>button {
+  background: rgb(49, 103, 255);
+  color: white;
+  width: 80.64px;
+  height: 33.28px;
+  font-size: 14px;
+  line-height: 1.43em;
+  border: 1px;
+  font-weight: bold;
+  font-family: Favoritfreshly, sans-serif;
+}
 
-    #navbar {
-        height: 50px;
-        /* border: dashed black 1px; */
-        width: 100%;
-        margin: auto;
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 15px;
-        position: fixed;
-        background-color: #FFFDF7;
-        /* margin-top: -10px; */
-        /* padding-top: 30px; */
-        text-align: center;
-    }
+#nav_log2 > a>button:hover {
+  transform: translate(2px, -2px); 
+}
+#navbar {
+  position: sticky;
+  top:-10px;
+  
+}
 
-    #navbar>div {
-        height: 45%;
-        /* border: 1px solid red; */
-        margin-top: 15px;
-        font-family: Favoritfreshly, sans-serif;
-
-        font-weight: 700;
-        
-    }
-
-    #logofornav {
-        width: 100px;
-        margin-left: 10px;
-    }
-
-    #navitem {
-        display: flex;
-        width: auto;
-    }
-
-    #navitem>div {
-        /* border:1px solid green; */
-        margin: 0px 20px;
-        font-size: 14px;
-    }
-
-    #navitem>div:hover {
-        color: rgb(49, 103, 255);
-    }
-
-    #logsign {
-        height: 55%;
-        display: flex;
-        margin-top: 0px;
-        justify-content: center;
-    }
-
-    #logsign>div {
-        margin-right: 5px;
-    }
-
-    #logsign>button {
-        height: 30px;
-        background-color: rgb(49, 103, 255);
-        color: rgb(255, 255, 255);
-        margin: 0px 5px;
-        border: 0px;
-        height: auto;
-    }
-
-    /* nav bar ends here */
 
     #logo {
         display: block;
@@ -335,37 +331,40 @@
 
 <body>
     <!-- navbar start -->
-    <!-- type of website bar -->
+    <div id="upper">
+        <a href="index.html"><img id="first_img"
+            src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg" /></a>
+        <a ><img id="second_img" style="margin-left: 20px"
+            src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f7b2e54745410836cfa3955_bizlogo_main-07.svg" /></a>
+      </div> 
     
-    <div id="navpar">
-        <div id="type">
-            <div id="consumersite"> <img id="consum" onclick="window.location.href='index.html'" 
-                    src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
-                    alt=" Freshly  logo"></div>
-            <div id="businesssite"> <img id="busi"
-                    src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f7b2e54745410836cfa3955_bizlogo_main-07.svg"
-                    alt="Business"> </div>
+      <!-- ---------------------------------------------- -->
+    
+      <div id="navbar">
+        <div id="nav_i">
+          <a href="index.html"><img id="nav_img"
+              src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg" /></a>
         </div>
-        <!-- type of website bar ends  -->
-
-        <div id="navbar">
-            <div> <img id="logofornav" onclick="window.location.href='index.html'" 
-                    src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
-                    alt=" Freshly  logo"> </div>
-            <div id="navitem">
-                <div onclick="window.location.href='plans and menu.html'">Plans & Menu</div>
-                <div onclick="window.location.href='how_it_works.html'">How it Works</div>
-                <div onclick="window.location.href='Gifts.html.html'">Gifts</div>
-                <div>Refer a friend</div>
-                <div onclick="window.location.href='help.html'">Help</div>
-            </div>
-            <!-- login and signup button -->
-            <div id="logsign">
-                <div onclick="window.location.href='login.html'">Login</div>
-                <button onclick="window.location.href='signUp.html'">Sign Up</button>
-            </div>
+        <div id="nav_a">
+          <div>
+            <a href="plans and menu.html">Plans & Menu</a>
+          </div>
+          <div>
+            <a href="how_it_works.html">How it Works</a>
+          </div>
+          <div><a href="https://www.fres">Gifts</a></div>
+          <div>
+            <a href="">Refer a Friend</a>
+          </div>
+          <div><a href="help.html">Help</a></div>
         </div>
-    </div>
+        <div id="nav_log">
+          <div id="nav_log1">
+            <a href="login.html">Login</a>
+          </div>
+          <div id="nav_log2"><a href="signUp.html"><button>Sign Up</button></a></div>
+        </div>
+      </div>
     
     <!-- nav bar ends -->
 <div id="scroll">
