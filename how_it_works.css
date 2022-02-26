@@ -118,92 +118,12 @@ a:after{
 }
 #navbar {
   position: sticky;
-  top: -100px;
+  top:-10px;
+  
 }
 
-/* nav bar start here */
-/* #type {
-  width: 240px;
-  height: 25px;
-  margin-top: 0%;
-  /* border: 1px dashed red; */
-  /* display: flex;
-  margin: auto;
-  margin-bottom: 10px;
-} */
+/* navbar ends here */
 
-/* #type > div { */
-  /* border: 1px solid black; */
-  /* width: 120px;
-  height: 100%;
-  margin: auto;
-} */
-/* #consum {
-  width: 52%;
-}
-#busi {
-  width: 90%;
-}
-#navpar {
-  width: 100%; */
-  /* background-color: rgb(255, 255, 255);  */
-  /* position: fixed; */
-  /* top: 0px; */
-  /* border: 1px solid red; */
-  /* background-color: #fffdf7;
-}
-#navbar {
-  height: 50px; */
-  /* border: dashed black 1px; */
-  /* width: 75%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-}
-#navbar > div {
-  height: 45%; */
-  /* border: 1px solid red; */
-  /* margin-top: 15px;
-  font-family: Favoritfreshly, sans-serif;
-
-  font-weight: 700;
-}
-#logofornav {
-  width: 100px;
-  margin-left: 10px;
-}
-#navitem {
-  display: flex;
-  width: auto;
-}
-#navitem > div { */
-  /* border:1px solid green; */
-  /* margin: 0px 20px;
-  font-size: 14px;
-}
-#navitem > div:hover {
-  color: rgb(49, 103, 255);
-}
-#logsign {
-  height: 55%;
-  display: flex;
-  margin-top: 0px;
-  justify-content: center;
-}
-#logsign > div {
-  margin-right: 5px;
-}
-#logsign > button {
-  height: 30px;
-  background-color: rgb(49, 103, 255);
-  color: rgb(255, 255, 255);
-  margin: 0px 5px;
-  border: 0px;
-  height: auto;
-} */ 
-
-/* nav bar ends here */
 #below_nav {
   height: 47.01px;
   width: 100%;
@@ -218,6 +138,7 @@ a:after{
   color: rgb(255, 255, 255);
   box-sizing: border-box;
   position: sticky;
+  top:60px;
 }
 #below_nav > div {
   width: 150px;
