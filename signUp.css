@@ -1,0 +1,250 @@
+body{
+    color: #303030;
+ 
+}
+/* nav bar start here */
+#type {
+    width: 240px;
+    height: 25px;
+    margin-top: 0%;
+    /* border: 1px dashed red; */
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  a{
+    color:#303030;
+    text-decoration: none;
+  }
+  
+  #type > div {
+    /* border: 1px solid black; */
+    width: 120px;
+    height: 100%;
+    margin: auto;
+  }
+  #consum {
+    width: 52%;
+  }
+  #busi {
+    width: 90%;
+  }
+  #navpar {
+    width: 100%;
+    /* background-color: rgb(255, 255, 255);  */
+    /* position: fixed; */
+    /* top: 0px; */
+    /* border: 1px solid red; */
+    background-color: #fffdf7;
+  }
+  #navbar {
+    height: 50px;
+    /* border: dashed black 1px; */
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  #navbar > div {
+    height: 45%;
+    /* border: 1px solid red; */
+    margin-top: 15px;
+    font-family: Favoritfreshly, sans-serif;
+  
+    font-weight: 700;
+  }
+  #logofornav {
+    width: 100px;
+    margin-left: 10px;
+    height:20px;
+  }
+  #navitem {
+    display: flex;
+    width: auto;
+  }
+  #navitem > div {
+    /* border:1px solid green; */
+    margin: 0px 20px;
+    font-size: 14px;
+  }
+  #navitem > div > a:hover {
+    color: rgb(49, 103, 255);
+  }
+  #logsign {
+    height: 55%;
+    display: flex;
+    margin-top: 0px;
+    justify-content: center;
+  }
+  #logsign > div {
+    margin-right: 5px;
+  }
+  #logsign > button {
+    height: 30px;
+    background-color: rgb(49, 103, 255);
+    color: rgb(255, 255, 255);
+    margin: 0px 5px;
+    border: 0px;
+    height: auto;
+  }
+  
+  /* nav bar ends here */
+#container{
+    height:500px;
+    width:100%;
+   
+ 
+}
+img{
+    height:500px;
+    width:100%;
+    object-fit: cover;
+    position:relative;
+}
+#innerContainer{
+    position:absolute;
+    height:380px;
+    width:50%;
+   
+    top:170px;
+    margin-left: 375px;
+    background: hsla(0,0%,100%,.8);  
+   
+}
+h1{
+    font-size: 48px;
+   margin-left: 35px;
+   margin-top: 40px;
+}
+h2{
+    font-size: 24px;
+    margin-left: 35px;
+    width:200%;
+  
+}
+
+#box{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 40px;
+
+}
+#form{
+    margin-left: -30px;
+}
+
+#email{
+    height:37px;
+    width:300px;
+    font-size: 18px;
+}
+#pass{
+    height:37px;
+    width:210px;
+   margin-left: 10px;
+    font-size: 18px;
+}
+#submit{
+    height:40px;
+    width:150px; 
+    margin-left:10px;
+    color:white;
+    background-color: #3167ff;
+    font-weight: bold;
+    border:0px;
+    font-size: 18px;
+}
+#para1{
+    margin-top: 30px;
+    margin-left: 38px;
+}
+#a{
+    color:rgb(0, 110, 255);
+}
+#para2{
+    margin-left: 38px;
+}
+#quest {
+  font-size: 48px;
+  margin-top: 50px;
+  margin-left: 600px;
+}
+#questions {
+  height: 500px;
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+  line-height: 40px;
+}
+hr {
+  border-bottom: 1px solid hsla(0, 0%, 78.8%, .75);
+}
+
+#hr{
+   margin-top: 100px;
+}
+
+#footer{
+  margin-top: 20px;
+  height:300px;
+  width:100%;
+
+  display: flex;
+  justify-content: space-around;
+  line-height: 17px;
+}
+#footer>div>a{
+  color: #666;
+  font-size: 13px;
+  text-decoration: none;
+}
+#img{
+  height:30px;
+  width:auto;
+}
+#p{
+  margin-top: -5px;
+}
+#pic1{
+  height:20px;
+  width:auto;
+  color: #b2b2bd;
+}
+#pic2{
+  height:40px;
+  width: auto;
+}
+#pic3{
+  height:40px;
+  width: 120px;
+}
+#child1{
+ margin-top: 40px;
+ margin-left: 200px;
+}
+#child2{
+  margin-top: 20px;
+}
+#child3{
+  margin-top: 20px;
+}
+#child4{
+  margin-top: 20px;
+  margin-right: 200px;
+}
+#para{
+  font-size: 17px;
+  margin-left: -5px;
+}
+.ok{
+  opacity: .65;
+}
+*{
+  font-family: FavoritFreshly,sans-serif;
+}
+
+
+
+
+
