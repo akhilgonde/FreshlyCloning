@@ -158,9 +158,10 @@
 
                 </div>
                 <div id="right2">
-
-
+                    <div> <h3>Meals Added To the Cart:- </h3></div>
+                
                 </div>
+                
 
 
             </div>
@@ -310,5 +311,19 @@
        localStorage.setItem("dDate", JSON.stringify(dDate));
        };
     
+
+       var Cart1 = JSON.parse(localStorage.getItem("Cart1")) || [];
+       Cart1.map(function(elem){
+        var cretdivforshowcart = document.createElement("div");
+        cretdivforshowcart.setAttribute("id","ffgggggf")
+        var forimg = document.createElement("img")
+        forimg.setAttribute("src",elem.src)
+        var divtxt = document.createElement("h5")
+        divtxt.style.justifyContent="start";
+        divtxt.textContent = elem.name;
+        cretdivforshowcart.append(forimg,divtxt)
+        document.querySelector("#right2").append(cretdivforshowcart);
+       })
+       
 
 </script>
