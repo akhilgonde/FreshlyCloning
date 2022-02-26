@@ -39,6 +39,8 @@ a:after{
 
 #second_img {
   width: 80px;
+  opacity:60%;
+  filter:grayscale(1);
   height: 40px;
 }
 
@@ -70,11 +72,11 @@ a:after{
 }
 #nav_a > div > a {
   font-family: Favoritfreshly, sans-serif;
-  color: rgb(48,58,66);
+  color: rgb(46, 50, 54);
   margin-left: 30px;
   font-size: 14px;
   line-height: 1.43em;
-  font-weight: 550;
+ font-weight: 550;
   text-decoration: none;
 }
 #nav_a > div > a:hover {
