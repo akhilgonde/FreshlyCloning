@@ -1,4 +1,9 @@
 function storedata() {
+  alert ("Submitted");
+  document.getElementById("row2_inp1").value=""
+  document.getElementById("row2_inp2").value=""
+  document.getElementById("row2_inp3").value=""
+  document.getElementById("row2_inp4").value=""
     var input1 = document.getElementById("row2_inp1").value;
     var input2 = document.getElementById("row2_inp2").value;
     var input3 = document.getElementById("row2_inp3").value;
@@ -11,5 +16,6 @@ function storedata() {
     localStorage.setItem("Subject", input2);
     localStorage.setItem("Help", input3);
     localStorage.setItem("Attached File", input4);
+   
   }
   
