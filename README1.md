@@ -60,9 +60,11 @@ Day wise flow :
 6. Day-6:- Finalized our Project code, Video Presentation, and this blog post.
 
 Git Hub Details :
-1. Project Link:- https://github.com/akhilgonde/FreshlyCloning
-2. Akhil Gonde:- akhilgonde
-3. Akshay Gangane:- akshaygangane
-4. Pratik Paul:- Pratik8279
-5. Santanu Mohapatra:- Santanu55555
-6. Shivaji Zirpe:- CodEsHiVaz
+ Project Link:- https://github.com/akhilgonde/FreshlyCloning
+ Diployed site link - https://elastic-edison-d8012f.netlify.app/
+1. Akhil Gonde:- akhilgonde
+2. Akshay Gangane:- akshaygangane
+3. Pratik Paul:- Pratik8279
+4. Santanu Mohapatra:- Santanu55555
+5. Shivaji Zirpe:- CodEsHiVaz
+
