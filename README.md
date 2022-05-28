@@ -6,6 +6,8 @@ This is what our index page looks like
 
 Home Page of Freshly website
 
+<img src="https://miro.medium.com/max/1050/0*_4fnKOCSwrvxpX7S.png'>
+
 Hello readers we are the students of Masai School. In this Blog, we will share our experience of our construct week project. In this project we had made a clone of US based meal delivering website named Freshly.com.
 
 Team Freshly Members :
