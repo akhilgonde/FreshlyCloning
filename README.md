@@ -70,15 +70,17 @@ Day-1:- We checked the website, how it was built and created a flow of the websi
 Git Hub Details :
 
 1. Project Link:- https://github.com/akhilgonde/FreshlyCloning
+ 
+2. Deployed Link :-https://relaxed-gecko-451ad3.netlify.app
+ 
+3. Akhil Gonde:- akhilgonde
 
-2. Akhil Gonde:- akhilgonde
+4. Akshay Gangane:- akshaygangane
 
-3. Akshay Gangane:- akshaygangane
+5. Pratik Paul:- Pratik8279
 
-4. Pratik Paul:- Pratik8279
+6. Santanu Mohapatra:- Santanu55555
 
-5. Santanu Mohapatra:- Santanu55555
-
-6. Shivaji Zirpe:- CodEsHiVaz
+7. Shivaji Zirpe:- CodEsHiVaz
 
 
